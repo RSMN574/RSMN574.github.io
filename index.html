@@ -3,10 +3,15 @@
 <head>
 	<title>Android手機王</title>
 <script> 
-	if(document.body.clientWidth<800){
+	window.onload=function{
+		var i=document.body.clientWidth;
+		i=Number(i)
+	if(i<800){
+		
 		alert("網頁目前不支援小螢幕的裝置")
 		location.reload()
 		
+	}
 	}
 	</script>
 <style> 
