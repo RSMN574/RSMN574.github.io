@@ -83,5 +83,10 @@ top:2%;
 	.items{
 		display:none;
 	}
+	#menu{
+		display:block;
+		width:20px;
+	}
+	
 }
 
