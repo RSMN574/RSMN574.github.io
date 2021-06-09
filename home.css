@@ -88,14 +88,12 @@ top:2%;
 	
 	
 	.items{
-		display:block;
+		
 		position:absolute;
 		top:13%;
 left:35%;
 	}
-	.d{
-	display:block;
-	}
+	
 	a{
 		text-decoration:none;
 	}
