@@ -84,3 +84,19 @@ top:2%;
 		display:none;
 	}
 }
+@media (orientation: landscape), (max-width:500px){
+	
+	
+	.items{
+		display:block;
+		position:absolute;
+		top:13%;
+left:35%;
+	}
+	.d{
+	display:block;
+	}
+	a{
+		text-decoration:none;
+	}
+}
