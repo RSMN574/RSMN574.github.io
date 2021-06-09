@@ -89,7 +89,9 @@ top:2%;
 	}
 	#mainmenu{
 		display:block;
-		
+		position:absolute;
+		top:2%;
+left:60%;
 	}
 	
 }
