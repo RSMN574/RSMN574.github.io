@@ -8,7 +8,12 @@
 <script> 
 	function menu(){
 	var ul=document.getElementById("ul")
-	ul.classList.toggle("hide")
+	if(ul.style.display=="none"){
+		
+		ul.style.display="block";
+	}else{
+	ul.style.display="none"	;
+	}
 		
 	}
 	</script>
