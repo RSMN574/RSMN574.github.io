@@ -84,7 +84,7 @@ top:2%;
 		display:none;
 	}
 }
-@media (orientation: landscape), (max-width:500px){
+@media (orientation: landscape), (max-width:200px){
 	
 	
 	.items{
