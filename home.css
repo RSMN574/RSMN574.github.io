@@ -84,17 +84,4 @@ top:2%;
 		display:none;
 	}
 }
-@media (orientation: landscape), (max-width:100px){
-	
-	
-	.items{
-		
-		position:absolute;
-		top:13%;
-left:35%;
-	}
-	
-	a{
-		text-decoration:none;
-	}
-}
+
