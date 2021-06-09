@@ -50,3 +50,29 @@ left:35%;
     color:#fff;
     font-family:Microsoft JhengHei;
 	}
+@media (orientation: portrait), (max-width:200px){
+	h1{
+		  text-align:center ;
+		 font-size:20px ;
+    color:#fff;
+    font-family:Microsoft JhengHei;
+	}
+	#Android{
+    border-radius:30px;
+    width:6% ;
+    height:6% ;
+    position:absolute; 
+top:2%; 
+}
+	header{
+    background-color:#2c3832 ;
+    width:100% ;
+    height:120px;
+}
+.d{
+	display:none;
+	}
+	.items{
+		display:none;
+	}
+}
