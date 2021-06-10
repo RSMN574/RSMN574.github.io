@@ -59,7 +59,7 @@ left:35%;
 }
 #menu{
 	
-width:20px;	
+width:60px;	
 	
 }
 @media (orientation: portrait), (max-width:200px){
@@ -90,8 +90,8 @@ top:2%;
 	#mainmenu{
 		display:block;
 		position:absolute;
-		top:2%;
-left:60%;
+		top:6%;
+	left:90%;
 	}
 	
 }
