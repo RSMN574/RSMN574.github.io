@@ -65,7 +65,7 @@ width:60px;
 @media (orientation: portrait), (max-width:200px){
 	h1{
 		  text-align:center ;
-		 font-size:60px ;
+		 font-size:40px ;
     color:#fff;
     font-family:Microsoft JhengHei;
 	}
