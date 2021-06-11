@@ -77,6 +77,13 @@ p{
 	font-size:18px;
 	text-align:center;
 }
+#fbicon{
+	width:10%;
+	
+	
+	
+	
+}
 
 @media (orientation: portrait), (max-width:200px){
 	h1{
