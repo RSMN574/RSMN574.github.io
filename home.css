@@ -86,12 +86,24 @@ left:30%;
 	
 	
 }
+#posts{
+	 position:relative;
+		
+left:35%;
+	top:4%;
+	
+	
+	
+	
+	
+}
 .post{
+	
+	
 	 position:absolute;
 		
-left:30%;
-	
-	
+left:35%;
+	top:35%;
 	
 	
 }
