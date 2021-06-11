@@ -78,8 +78,10 @@ p{
 	text-align:center;
 }
 #fbicon{
-	width:5%;
-	text-align:center;
+	width:2%;
+	 position:absolute;
+		top:80%;
+left:30%;
 	cursor:pointer;
 	
 	
