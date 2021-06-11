@@ -87,7 +87,7 @@ left:30%;
 	
 }
 #posts{
-	 position:relative;
+	 position:absolute;
 		
 left:35%;
 	top:4%;
@@ -100,9 +100,9 @@ left:35%;
 .post{
 	
 	
-	 position:absolute;
+	 position:relative;
 		
-left:35%;
+
 	top:35%;
 	
 	
