@@ -120,7 +120,16 @@ top:2%;
 	}
 	
 }
-
+.post{
+	position:absolute; 
+top:5%; 
+	left:30%;
+	
+	
+	
+	
+	
+}
 @media  (max-height:200px){
 	
 	h1{
