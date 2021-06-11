@@ -72,6 +72,11 @@ width:60px;
 	
 	
 }
+p{
+ font-family:Microsoft JhengHei;
+	font-size:10px;
+	text-align:center;
+}
 
 @media (orientation: portrait), (max-width:200px){
 	h1{
