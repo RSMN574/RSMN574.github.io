@@ -119,7 +119,15 @@ left:35%;
 .rwddiv{
 	float:left;
 }
-
+#ul{
+	 position:absolute;
+		
+left:35%;
+	top:14%;
+	
+	
+	
+}
 @media (orientation: portrait), (max-width:200px){
 	h1{
 		  text-align:center ;
