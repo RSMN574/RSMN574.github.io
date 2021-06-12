@@ -77,11 +77,20 @@ p{
 	font-size:18px;
 	text-align:center;
 }
-.fbicon{
+#fbicon{
 	width:3%;
 	 position:absolute;
 		top:80%;
 left:30%;
+	cursor:pointer;
+	
+	
+}
+#lineicon{
+	width:3%;
+	 position:absolute;
+		top:80%;
+left:40%;
 	cursor:pointer;
 	
 	
