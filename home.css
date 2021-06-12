@@ -93,7 +93,7 @@ left:30%;
 left:50%;
 	cursor:pointer;
 	
-	
+display:block;
 }
 #posts{
 	 position:absolute;
