@@ -116,6 +116,9 @@ left:35%;
 	border-radius:10px;
 	
 }
+.rwddiv{
+	float:left;
+}
 
 @media (orientation: portrait), (max-width:200px){
 	h1{
