@@ -128,6 +128,10 @@ left:12%;
 	
 	
 }
+.rwddiv{
+	display:none;
+	
+}
 @media (orientation: portrait), (max-width:200px){
 	h1{
 		  text-align:center ;
