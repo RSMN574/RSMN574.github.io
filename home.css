@@ -118,6 +118,8 @@ left:35%;
 }
 .rwddiv{
 	float:left;
+	border:2px #FFAC55 solid;
+		display:none;
 }
 #ul{
 	 position:absolute;
@@ -128,10 +130,7 @@ left:12%;
 	
 	
 }
-.rwddiv{
-	display:none;
-	
-}
+
 @media (orientation: portrait), (max-width:200px){
 	h1{
 		  text-align:center ;
