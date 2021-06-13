@@ -173,7 +173,12 @@ left:0%;
 	
 	
 }
-	
+.rwddiv{
+	float:left;
+	border:2px #FFAC55 solid;
+		display:block;
+}	
+		
 }
 
 @media  (max-height:200px){
@@ -229,7 +234,11 @@ left:1%;
 	
 }
 	
-	
+.rwddiv{
+	float:left;
+	border:2px #FFAC55 solid;
+		display:block;
+}	
 	
 }
 
