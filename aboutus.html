@@ -108,10 +108,14 @@
 	console.log(ul)
 		ul.style.display="block";
 		h2.innerHTML="</br>關於我們"
+	}else if(ul.style.display=="block"){
+		
+		ul.style.display="none"	
+		h2.innerHTML="關於我們"
 	}
 		else{
-	ul.style.display="none"	;
-		h2.innerHTML="關於我們"
+	ul.style.display="block"	
+		h2.innerHTML="</br>關於我們"
 	}
 	
 	
