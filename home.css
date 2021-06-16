@@ -6,9 +6,10 @@
 }
 homep{
 	font-size:10px;
+	font-family: 'Noto Sans TC', sans-serif;
 }
 .imgadiv{
-	
+	float:left;
 	
 }
 .homeimg{
