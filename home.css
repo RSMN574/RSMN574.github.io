@@ -7,7 +7,7 @@
 .postp{
 	text-align:center;
 	font-family: 'Noto Sans TC', sans-serif;
-	
+	word-break: break-all;
 	
 }
 
