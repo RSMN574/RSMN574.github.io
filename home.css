@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap');
 .homea{
-	font-size:40px;
+	font-size:30px;
 	
 }
 homep{
@@ -327,17 +327,7 @@ left:35%;
 		
 }
 	
-#posts{
-	 position:absolute;
-		
-left:24%;
-	top:40%;
-	width:20%;
-	
-	
-	
-	
-}	
+
 #ul{
 	display:none;	
 	}	
