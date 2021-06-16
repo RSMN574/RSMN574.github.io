@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap');
+.homea{
+	font-size:40px;
+	
+}
+homep{
+	font-size:10px;
+}
 .imgadiv{
-	border:1px black solid;
+	
 	
 }
 .homeimg{
