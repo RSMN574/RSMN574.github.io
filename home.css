@@ -141,7 +141,8 @@ left:12%;
 	top:18%;
 	font-family:Microsoft JhengHei;
 font-size:30px;	
-	font-weight:bold;
+	font-weight:600;
+color:#232a31;	
 	
 }
 @media (orientation: portrait), (max-width:200px){
