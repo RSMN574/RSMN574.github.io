@@ -28,6 +28,15 @@
 	
 	
 	}
+		  function height(){
+			  var h=window.innerHeight
+			  var h2a=document.getElementById("h2a")
+			  var imda=document.getElementById("imga")
+			  if(h<=464){
+				  h2a.innerHTML="<br>Android 訊息 app 正式支援端到端加密了"
+				  
+			  }
+		  }
 	</script>
   </head>
 <body >
@@ -72,10 +81,10 @@
           <img src="images (1).png" id="menu">
 		    </div>
 	    </header>
-<h2 class="posth2">Android 訊息 app 正式支援端到端加密了</h2>
+<h2 class="posth2" id="h2a">Android 訊息 app 正式支援端到端加密了</h2>
 	<br><br>
 	<div class="postdiv">
-  <img class="postimg" src="https://s.yimg.com/ny/api/res/1.2/C6_0IkrAiXlLcw8LFrrImQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTU0MDtjZj13ZWJw/https://s.yimg.com/uu/api/res/1.2/fnJ3UrR1O.7I.T0b9QXkWg--~B/aD0xMDgwO3c9MTkyMDthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/engadget_939/ff3ee246aa4da774e81edc52ffe68385">
+  <img class="postimg" id="imga" src="https://s.yimg.com/ny/api/res/1.2/C6_0IkrAiXlLcw8LFrrImQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTU0MDtjZj13ZWJw/https://s.yimg.com/uu/api/res/1.2/fnJ3UrR1O.7I.T0b9QXkWg--~B/aD0xMDgwO3c9MTkyMDthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/engadget_939/ff3ee246aa4da774e81edc52ffe68385">
 	<p class="postp">之前已經在 beta 版 Android 中開始測試的訊息 app 端到端加密功能，現在也正式向所有用戶開放了。不過需要注意的是，<br>目前該特性僅能用於一對一的對話，群組訊息暫時還不適用。如果你想啟用加密的話，需要先將設定內的 RCS 選項打開。<br>當看到發送按鈕旁邊出現一個鎖的標誌時，就代表端到端加密已被啟用了。
 <br><br>
 <br>根據 Google 的計畫，包含端到端加密的更新會在本週內陸續推送給用戶。該更新內還包含有為訊息加星標、地震警報<br>（適用部分地區）等功能，而且還改進了助理、Android Auto、Voice Access 的體驗。</p>
