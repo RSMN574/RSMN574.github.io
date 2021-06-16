@@ -9,24 +9,35 @@
 <script> 
 	function menu2(){
 	var ul=document.getElementById("ul")
-	var h2=document.getElementById("h2")
+	
 	
 	if(ul.style.display=="none"){
 	console.log(ul)
 		ul.style.display="block";
-		h2.innerHTML="</br>關於我們"
+		
 	}else if(ul.style.display=="block"){
 		
 		ul.style.display="none"	
-		h2.innerHTML="關於我們"
+		
 	}
 		else{
 	ul.style.display="block"	
-		h2.innerHTML="</br>關於我們"
+		
 	}
 	
 	
 	}
+	
+	var w=window.innerWidth
+	if(w>1920){
+		
+	alert("這台裝置尚未支援我們的網站，我們將努力修復中")	
+		
+	}else if(w<600){
+	console.log("w<600")	
+		
+	}
+	
 	</script>
 
 </head>
