@@ -134,7 +134,14 @@ left:12%;
 	display:none;	
 		
 }
-
+.posth2{
+	 position:absolute;
+		
+left:12%;
+	top:18%;
+	
+	
+}
 @media (orientation: portrait), (max-width:200px){
 	h1{
 		  text-align:center ;
