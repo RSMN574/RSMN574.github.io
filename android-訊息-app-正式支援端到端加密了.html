@@ -7,7 +7,17 @@
 	    <link rel="shortcut icon" href="android-icon.ico">
 	  <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
-	  <script> 
+	  <script>
+		  var w=window.innerWidth
+	if(w>1920){
+		
+	alert("這台裝置尚未支援我們的網站，我們將努力修復中")	
+		
+	}else if(w<600){
+	console.log("w<600")	
+		var postdiv=getElementById("postdiv")
+		postdiv.HTML="<br>"
+	}
 	function menu2(){
 	var ul=document.getElementById("ul")
 	
@@ -28,7 +38,9 @@
 	
 	
 	}
-		  function height(){
+		 
+		  }
+		   function height(){
 			  var h=window.innerHeight
 			  var h2a=document.getElementById("h2a")
 			  var imda=document.getElementById("imga")
@@ -36,7 +48,9 @@
 				  h2a.innerHTML="<br>Android 訊息 app 正式支援端到端加密了"
 				  
 			  }
-		  }
+			   height()
+			   
+			   
 	</script>
   </head>
 <body >
@@ -68,7 +82,7 @@
 	</div>
 	     <div id="ul">
 	     
-                <div class="rwddiv"> <a href="https://rsmn574.github.io/Android手機.html">Android資訊 </a>
+                <div class="rwddiv"> <a href="https://rsmn574.github.io/Androidi.html">Android資訊 </a>
                 </div>
                 <div class="rwddiv"><a href="https://rsmn574.github.io/Android手機.html">Android手機</a>
                 </div>
