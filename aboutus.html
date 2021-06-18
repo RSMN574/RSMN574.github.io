@@ -1,149 +1,97 @@
+
 <!DOCTYPE html>
-<html >
+<html>
 <head>
-	<title>關於我們</title>
-	<meta name="google-site-verification" content="oPxKVkV7QiWCrd9dFlJrcfcPacf_oDclm9LfVufnU0E" />
+	<meta charset="utf-8"> 
+	<title>Android手機王</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
-	<link rel="stylesheet" type="text/css" href="https://rsmn574.github.io/home.css">
-   <link rel="shortcut icon" href="android-icon.ico">
-<script>
-	var w=window.innerWidth
-	if(w>1920){
-		
-	alert("這台裝置尚未支援我們的網站，我們將努力修復中")	
-		
-	}else if(w<600){
-	console.log("w<600")	
-		
+	
+	
+	
+	
+	<link rel="shortcut icon" href="android-icon.ico">
+	<!--CSS--><style>
+	#title{
+		 height: 100px;
+         background: #aaa;
 	}
-	</script>
+  
+  </style>
 </head>
-<body id="home">
-    <header > 
-	    
-	    <a href="https://rsmn574.github.io/#home">
-	<img src="184411347_103560611920750_2318464235364960416_n.jpg" id="Android">
-   <h1 id="title">Android手機王</h1>
-	    </a>
-	   
-	    
-	    
-	   <div class="items">
-		  
- <a href="https://rsmn574.github.io/androidi.html">
-	 <span class="Androidi" id="ai">Android資訊     </span>  </a><span class="d">|</span>
-	  
-			  
-		   
-	     <a href="https://rsmn574.github.io/Android手機.html">
-	<span class="Androidi" id="ap">Android手機     </span>  </a><span class="d">|</span>
-	    
-		   <a href="https://rsmn574.github.io/Android刷機.html">
-	<span class="Androidi" id="af">Android刷機     </span>  </a><span class="d">|</span>
-		   
-		   <a href="https://rsmn574.github.io/aboutus.html">
-	<span class="Androidi" id="au">關於我們   </span>  </a><span class="d">|</span>
-			   
-	</div>
-	     <div id="ul">
-	     
-                <div class="rwddiv"> <a href="https://rsmn574.github.io/androidi.html">Android資訊 </a></div>
-                <div class="rwddiv"><a href="https://rsmn574.github.io/Android手機.html">Android手機</a></div>
+<body>
+	
+<div class="jumbotron text-center" id="title" style="margin-bottom:0">
+  <h1>Android手機王</h1>
+  </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Android手機王</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-                <div class="rwddiv"><a href="https://rsmn574.github.io/Android刷機.html">Android刷機 </a></div>
-                
-                <div class="rwddiv"> <a href="https://rsmn574.github.io/aboutus.html">關於我們 </a> </div>
-               
-		     </div>
-         <div id="mainmenu" onclick="menu2()">
-          <img src="images (1).png" id="menu">
-		    </div>
-		    
-	    </header>
-<main id="main">
-	<h2 id="h2">關於我們</h2>
-	<p>Android手機王是有安卓愛好者組成的，如果你也想加入請在下方Messenger輸入"加入我們"。
-		
-		
-	</p>
-	
-
-	</main>
-<article> 
-	<!-- Messenger 洽談外掛程式 Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your 洽談外掛程式 code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "103557995254345");
-      chatbox.setAttribute("attribution", "biz_inbox");
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v11.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
-	</article>
-<footer> 
-	
-	</footer>
-<div id="fbicondiv" onclick="fb()">
-	<img src="facebook-2.png" id="fbicon">
-		     </div>
-		     <div id="linediv" onclick="line()">
-	<img src="Line_Rounded_Solid_icon-icons.com_61550.png" id="lineicon">
-		     </div>
-	
-	<script> 
-	
-	
-	function menu2(){
-	var ul=document.getElementById("ul")
-	var h2=document.getElementById("h2")
-	
-	if(ul.style.display=="none"){
-	console.log(ul)
-		ul.style.display="block";
-		h2.innerHTML="</br>關於我們"
-	}else if(ul.style.display=="block"){
-		
-		ul.style.display="none"	
-		h2.innerHTML="關於我們"
-	}
-		else{
-	ul.style.display="block"	
-		h2.innerHTML="</br>關於我們"
-	}
-	
-	
-	}
-	function fb(){
-		
-		window.location="https://www.facebook.com/rsmn574"
-		
-		
-		
-	}
-	
-	function line(){
-		
-		window.location="https://line.me/R/ti/p/%40555akays"
-	}
-	
-	</script>
-
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Android資訊 
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Android系統</a>
+	<a class="dropdown-item" href="#">Android 12專區</a>
+	<a class="dropdown-item" href="#">Android APP</a>	
+		</div>
+      </li>
+	       
+	    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Android手機
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">三星</a>
+          <a class="dropdown-item" href="#">小米</a>
+          <a class="dropdown-item" href="#">OPPO</a>
+          <a class="dropdown-item" href="#">realme</a>
+          <a class="dropdown-item" href="#">ASUS</a>
+          <a class="dropdown-item" href="#">Vivo</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">其他</a>
+        </div>
+	 	
+          
+      </li>
+	    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Android刷機 
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Android TWRP</a>
+          <a class="dropdown-item" href="#">Android刷機</a>
+         <a class="dropdown-item" href="#">magisk 模組</a>
+         <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">其他</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          關於我們 
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">社群網站</a>
+          <a class="dropdown-item" href="#">Android手機王 介紹</a>
+          <a class="dropdown-item" href="#">加入我們</a>
+		</div>
+      </li>
+     
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="搜尋" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜尋</button>
+    </form>
+  </div>
+</nav>
 </body>
 </html>
