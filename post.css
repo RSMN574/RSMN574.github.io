@@ -1,5 +1,9 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Sans+TC:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap');
 .h1{
-  font-family: 'Dela Gothic One', cursive;
+ font-family: 'Titillium Web', sans-serif;
+}
+.p{
+  font-family: 'Noto Sans TC', sans-serif;
 }
