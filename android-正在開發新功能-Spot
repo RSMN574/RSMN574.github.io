@@ -96,9 +96,14 @@
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="https://rsmn574.github.io">首頁</a></li>
     <li class="breadcrumb-item"><a href="https://rsmn574.github.io/androidsys.html">安卓系統</a></li>
-    <li class="breadcrumb-item active" aria-current="page">android 正在開發新功能[Spot]</li>
+    <li class="breadcrumb-item active" aria-current="page">Android 正在開發新功能 [Spot]</li>
   </ol>
 </nav>
-	
+	 <div class="jumbotron text-center" style="margin-bottom:0" id="div">
+	  <h1 class="h1">Android 正在開發新功能 [Spot]</h1>
+	  </div>
+	  <div class="container">
+	  
+	  </div>
 	</body>
 </html>
