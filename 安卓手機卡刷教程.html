@@ -114,7 +114,11 @@
 刷第三方 ROM 之前，需要先通過 Fastboot 模式刷入第三方 Recovery，這裏以 TWRP 為例。 <br>
 1-1.開啟「cmd」程式後，輸入「adb」。<br>
 1-2.輸入「adb devices」檢查是否連接手機。(成功連接會顯示一串數字。如果沒有顯示數字串，說明沒有安裝或安裝失敗 USB 驅動程式。)<br>			 
-			 
+1-3.輸入「adb reboot bootloader」，把手機重啟到Bootloader。<br>
+1-4.輸入「fastboot devices」，成功連接會顯示一串數字，表示電腦成功連接到裝置的Fastboot模式了。<br>
+1-5.輸入「fastboot flash recovery *映像檔路徑*」，例：fastboot flash recovery c:\twrp.img 刷入img檔到recovery分區<br>
+1-6.輸入「fastboot boot recovery」重啟到recovery。<br>	
+1-7.長按音量鍵(+)及電源鍵，進入TWRP (有些手機可能是，長按音量鍵(–)及電源鍵)。<br>			 
 			 <br>
 可參考以下連結： <br>
 			 <a target="_blank" href="https://www.moonlol.com/adb-fastboot%E5%B7%A5%E5%85%B7%E7%B7%9A%E5%88%B7twrp-recovery-5954.html?fbclid=IwAR3LrNV9KDKx4rm5Knxk4cQY0B4VKxSeSDnoBRFdfnbww76QnQbnGNhT1wk">https://www.moonlol.com/adb-fastboot%E5%B7%A5%E5%85%B7%E7%B7%9A%E5%88%B7twrp-recovery-5954.html?fbclid=IwAR3LrNV9KDKx4rm5Knxk4cQY0B4VKxSeSDnoBRFdfnbww76QnQbnGNhT1wk</a> <br>
