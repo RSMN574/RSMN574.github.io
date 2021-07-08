@@ -161,6 +161,21 @@
 連結:<a href="https://github.com/topjohnwu/Magisk/releases?fbclid=IwAR0Oox9VAzSz_4LX7OwB7-6XQ6PZKPALb5CqhdeZ-2Khri08iydBjj50Ka4">https://github.com/topjohnwu/Magisk/releases?fbclid=IwAR0Oox9VAzSz_4LX7OwB7-6XQ6PZKPALb5CqhdeZ-2Khri08iydBjj50Ka4</a></li>
 		<li class="p">同上2~5點步驟</li>
 	</ol>
+	<p class="p">清除使用者資料(只要跨版本就建議，例如:官方系統轉EU、EU轉系統、開發版轉穩定版、穩定版轉開發版、官方轉任何第三方系統等等)，單純更新系統不用，有些時候系統轉換也不一定要清，可以試試看不清，但有可能會遇到系統不穩定等情況，也可以等遇到後再清
+<br>
+		另外TWRP的清除資料分為兩種wipe data、format data，後者比前這更乾淨，只有後者能夠解決使用者資料加密的問題</p>
+	<ul>
+		<li class="p">(wipe data(清除data分區，但不包含使用者資料(檔案總管裡面看得到的資料、照片、下載的檔案等))，主要做法有兩種</li>
+		
+	</ul>
+	<ol>
+		<li class="p">主畫面右上角wipe(清除)>滑動factory reset(重設為原廠)
+			這種會連cache分區一起清除</li>
+		<li class="p">主畫面右上角wipe(清除)>advanced wipe(進階清除)>勾選data清除</li>
+	</ol>
+	<ul>
+		<li class="p">format data(格式化data分區)可以解決加密使用者資料的問題，會清除所有包含使用者資料(檔案總管裡面看得到的資料、照片、下載的檔案等)</li>
+	</ul>
 	</div>
   <br>
 
