@@ -10,7 +10,7 @@
 	if(localStorage.name){
 		console.log(localStorage.name)
 		document.getElementById("header").style.display = "none"
-		
+		game()
 		
 	}else{
 		console.log("無資料")
@@ -21,7 +21,7 @@ function load(){
 	if(localStorage.name){
 		console.log(localStorage.name)
 		document.getElementById("header").style.display = "none"
-		
+		game()
 		
 	}else{
 		console.log("無資料")
@@ -36,15 +36,28 @@ function load(){
 			name=document.getElementById("name").value
 			localStorage.setItem("name",name)
 			load()
+			
 		}
+		}
+		
+		function game(){
+			var user=document.getElementById("user")
+			user.style.display="none"
+			
+			
 		}
 	</script>
   <style>
+	  
 	  .container{
     display: flex;
     justify-content: center; 
     align-items: center; 
 }
+	  p{
+	font-family:Microsoft JhengHei;	  
+		  display:none;
+	  }
 	  </style>
   </head>
   <body>
@@ -61,6 +74,8 @@ function load(){
 	    <button id="confirm" onclick="check()">確定</button>
 	  </div>
 	  </header>
- 
+ <main id="main" >
+	 <p id="user"></p>
+	  </main>
   </body>
 </html>
