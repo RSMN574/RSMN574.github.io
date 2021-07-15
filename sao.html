@@ -52,10 +52,15 @@ function load(){
 		}
 		function changename(){
 			localStorage.removeItem('name')
-			name=prompt("更改名稱")
+			var name2=prompt("更改名稱")
+			if(name2){
+				alert("名字不能空白")
+			}else{
 			localStorage.setItem("name",name)
 			user=document.getElementById("user")
 			user.innerHTML=localStorage.name+"&nbsp;"
+				
+			}
 		}
 	</script>
   <style>
