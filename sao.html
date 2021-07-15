@@ -43,9 +43,13 @@ function load(){
 		function game(){
 			var user=document.getElementById("user")
 			user.style.display="block"
-			user.innerHTML=localStorage.name
+			user.innerHTML=localStorage.name+"&nbsp;"
 			
 			
+		}
+		function changename(){
+			name=prompt("更改名稱")
+			localStorage.setItem("name",name)
 		}
 	</script>
   <style>
@@ -76,7 +80,7 @@ function load(){
 	  </div>
 	  </header>
  <main id="main" >
-	 <p id="user"></p>
+	 <p id="user"></p><button onclick="changename()">更改名稱</button>
 	  </main>
   </body>
 </html>
