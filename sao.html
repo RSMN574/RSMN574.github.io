@@ -6,9 +6,11 @@
 	<script>
 		var name
 window.onload=function(){
-var n=localStorage.getItem(name)
-	if(n!=null){
-		console.log(name)
+
+	if(localStorage.name){
+		console.log(n)
+	}else{
+		console.log("無資料")
 	}
 }
 		if(type of(Storage)=="unfefined"){
