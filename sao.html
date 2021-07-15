@@ -53,7 +53,7 @@ function load(){
 		function changename(){
 			localStorage.removeItem('name')
 			var name2=prompt("更改名稱")
-	name:if(name2){
+	if(name2){
 				localStorage.setItem("name",name2)
 			user=document.getElementById("user")
 			user.innerHTML=localStorage.name+"&nbsp;"
@@ -61,7 +61,7 @@ function load(){
 			}else{
 			
 				alert("名字不能空白")
-				continue name
+				break
 			}
 		}
 	</script>
