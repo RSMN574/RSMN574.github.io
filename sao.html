@@ -5,6 +5,7 @@
 	<title>SAO</title>
 	<script>
 		var name
+		var user
 		window.onload=function (){
 
 	if(localStorage.name){
@@ -41,9 +42,11 @@ function load(){
 		}
 		
 		function game(){
-			var user=document.getElementById("user")
+			 user=document.getElementById("user")
 			user.style.display="block"
 			user.innerHTML=localStorage.name+"&nbsp;"
+			var main=document.getElementById("main")
+			main.style.display="block"
 			
 			
 		}
@@ -51,6 +54,8 @@ function load(){
 			localStorage.removeItem('name')
 			name=prompt("更改名稱")
 			localStorage.setItem("name",name)
+			user=document.getElementById("user")
+			user.innerHTML=localStorage.name+"&nbsp;"
 		}
 	</script>
   <style>
@@ -62,7 +67,10 @@ function load(){
 }
 	  p{
 	font-family:Microsoft JhengHei;	  
-		  display:none;
+		  
+	  }
+	  main{
+	display:none;	  
 	  }
 	  </style>
   </head>
