@@ -5,7 +5,18 @@
 	<title>SAO</title>
 	<script>
 		var name
-window.onload=function(){
+		window.onload=function (){
+
+	if(localStorage.name){
+		console.log(localStorage.name)
+		document.getElementById("header").style.display = "none"
+		
+		
+	}else{
+		console.log("無資料")
+	}
+}
+function load(){
 
 	if(localStorage.name){
 		console.log(localStorage.name)
@@ -24,6 +35,7 @@ window.onload=function(){
 		}else{
 			name=document.getElementById("name").value
 			localStorage.setItem("name",name)
+			load()
 		}
 		}
 	</script>
