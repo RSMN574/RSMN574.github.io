@@ -9,6 +9,9 @@ window.onload=function(){
 
 	if(localStorage.name){
 		console.log(localStorage.name)
+		document.getElementById("header").style.display = "none"
+		
+		
 	}else{
 		console.log("無資料")
 	}
@@ -33,6 +36,7 @@ window.onload=function(){
 	  </style>
   </head>
   <body>
+	  <header id="header">
     <div class="container">
 	    <label for="name">請輸入名稱</label>
 	    <input type="text" id="name"><br>
@@ -44,6 +48,7 @@ window.onload=function(){
 	  <br><br>
 	    <button id="confirm" onclick="check()">確定</button>
 	  </div>
+	  </header>
  
   </body>
 </html>
