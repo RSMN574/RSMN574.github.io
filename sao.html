@@ -48,6 +48,7 @@ function load(){
 			
 		}
 		function changename(){
+			localStorage.removeItem('name')
 			name=prompt("更改名稱")
 			localStorage.setItem("name",name)
 		}
