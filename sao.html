@@ -52,29 +52,43 @@ function load(){
 			main.style.display="block"
 			document.getElementById("imgmain").onclick=function(){
 				var audio = new Audio("https://rsmn574.github.io/1.mp3");
+				audio.volume=1
 				var audio2=new Audio("https://rsmn574.github.io/2.mp3");
+					audio2.volume2=1
 				var audio3=new Audio("https://rsmn574.github.io/3.mp3");
+					audio3.volume3=1
 				var audio4=new Audio("https://rsmn574.github.io/4.mp3");
+					audio4.volume=1
 				var audio5=new Audio("https://rsmn574.github.io/5.mp3");
+					audio5.volume=1
 				var audio6=new Audio("https://rsmn574.github.io/6.mp3");
+					audio6.volume=1
 				var audio7=new Audio("https://rsmn574.github.io/7.mp3");
+					audio7.volume=1
 				var audio8=new Audio("https://rsmn574.github.io/8.mp3");
+					audio8.volume=1
 				var audio9=new Audio("https://rsmn574.github.io/9.mp3");
+					audio9.volume=1
 				var result=math.floor(math.random()*9);
 				switch(result){
 					case 1:
+						console.log(1)
 						audio.play();
 						break;
 						case 2:
+						console.log(2)
 						audio2.play();
 						break;
 						case 3:
+						console.log(3)
 						audio3.play();
 						break;
 						case 4:
+						console.log(4)
 						audio4.play();
 						break;
 						case 5:
+						console.log(5)
 						audio5.play();
 						break;
 						case 6:
