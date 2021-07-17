@@ -50,7 +50,48 @@ function load(){
 			user.innerHTML=localStorage.name+"&nbsp;"
 			var main=document.getElementById("main")
 			main.style.display="block"
-			
+			document.getElementById("imgmain").onclick=function(){
+				var audio = new Audio("https://rsmn574.github.io/1.mp3");
+				var audio2=new Audio("https://rsmn574.github.io/2.mp3");
+				var audio3=new Audio("https://rsmn574.github.io/3.mp3");
+				var audio4=new Audio("https://rsmn574.github.io/4.mp3");
+				var audio5=new Audio("https://rsmn574.github.io/5.mp3");
+				var audio6=new Audio("https://rsmn574.github.io/6.mp3");
+				var audio7=new Audio("https://rsmn574.github.io/7.mp3");
+				var audio8=new Audio("https://rsmn574.github.io/8.mp3");
+				var audio9=new Audio("https://rsmn574.github.io/9.mp3");
+				var result=math.floor(math.random()*9);
+				switch(result){
+					case 1:
+						audio.play();
+						break;
+						case 2:
+						audio2.play();
+						break;
+						case 3:
+						audio3.play();
+						break;
+						case 4:
+						audio4.play();
+						break;
+						case 5:
+						audio5.play();
+						break;
+						case 6:
+						audio6.play();
+						break;
+						case 7:
+						audio7.play();
+						break;
+						case 8:
+						audio8.play();
+						break;
+						case 9:
+						audio9.play();
+						break;
+				}
+                  
+			}
 			
 		}
 		function changename(){
@@ -128,7 +169,7 @@ function load(){
 	  <button id="vs">對戰</button>
 	<button id="lottery">抽獎</button>
 	 <div  class="container">
-	  <img src="https://github.com/RSMN574/RSMN574.github.io/blob/main/IMG_20210716_181039.png?raw=true">
+	  <img id="imgmain"src="https://github.com/RSMN574/RSMN574.github.io/blob/main/IMG_20210716_181039.png?raw=true">
 		 </div>
 	  </main>
   </body>
