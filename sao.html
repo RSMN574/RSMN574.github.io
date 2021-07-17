@@ -4,8 +4,10 @@
 	<meta charset="utf-8"> 
 	<title>SAO</title>
 	<script>
+		var main=document.getElementById("main")
 		var name
 		var user
+		var btnre=document.getElementById("btnre")
 		window.onload=function (){
 var sw=document.body.clientWidth
 			if(sw<1000){
@@ -48,7 +50,7 @@ function load(){
 			 user=document.getElementById("user")
 			user.style.display="block"
 			user.innerHTML=localStorage.name+"&nbsp;"
-			var main=document.getElementById("main")
+			
 			main.style.display="block"
 			
 			
@@ -136,8 +138,17 @@ function load(){
 				}
                   
 			}	
+			function collect(){
+				main.style.display="none"
+				btnre.style.display="block"
 				
-		
+			}
+		function re(){
+				main.style.display="block"
+			btnre.style.display="none"
+				
+				
+			}
 	</script>
   <style>
 	  
@@ -171,6 +182,19 @@ function load(){
 		  top:700px;
 		  left:850px;    
 		  }
+	  #re{
+		  
+		 display: flex;
+		  position:absolute;
+		  top:700px;
+		  left:20px;      
+		  
+	  }
+	  #btnre{
+		  
+		  display:none;
+		  
+	  }
 	  </style>
   </head>
   <body>
@@ -190,12 +214,18 @@ function load(){
  <main id="main" >
 	 <p id="user"></p><button onclick="changename()">更改名稱</button>
 	
-	 <button id="collect">收集</button>
+	 <button id="collect" onclick="collect()">收集</button>
 	  <button id="vs">對戰</button>
 	<button id="lottery">抽獎</button>
+	
 	 <div  class="container" onclick="playaudio()">
 	  <img id="imgmain"src="https://github.com/RSMN574/RSMN574.github.io/blob/main/IMG_20210716_181039.png?raw=true">
 		 </div>
 	  </main>
+	  <div id="btnre">
+		   <button id="re" onclick="re()">返回</button>
+		  
+		  
+		  </div>
   </body>
 </html>
