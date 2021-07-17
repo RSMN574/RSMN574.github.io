@@ -4,7 +4,7 @@
 	<meta charset="utf-8"> 
 	<title>SAO</title>
 	<script>
-		var main=document.getElementById("main")
+		var main
 		var name
 		var user
 		var btnre=document.getElementById("btnre")
@@ -50,7 +50,7 @@ function load(){
 			 user=document.getElementById("user")
 			user.style.display="block"
 			user.innerHTML=localStorage.name+"&nbsp;"
-			
+			main=document.getElementById("main")
 			main.style.display="block"
 			
 			
@@ -139,11 +139,13 @@ function load(){
                   
 			}	
 			function collect(){
+				main=document.getElementById("main")
 				main.style.display="none"
 				btnre.style.display="block"
 				
 			}
 		function re(){
+			main=document.getElementById("main")
 				main.style.display="block"
 			btnre.style.display="none"
 				
