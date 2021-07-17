@@ -7,7 +7,7 @@
 		var main
 		var name
 		var user
-		var btnre=document.getElementById("btnre")
+		var btnre
 		window.onload=function (){
 var sw=document.body.clientWidth
 			if(sw<1000){
@@ -141,12 +141,14 @@ function load(){
 			function collect(){
 				main=document.getElementById("main")
 				main.style.display="none"
+				 btnre=document.getElementById("btnre")
 				btnre.style.display="block"
 				
 			}
 		function re(){
 			main=document.getElementById("main")
 				main.style.display="block"
+			
 			btnre.style.display="none"
 				
 				
