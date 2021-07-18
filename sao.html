@@ -214,16 +214,15 @@ function load(){
 	  </header>
  <main id="main" >
 	 <p id="user"></p><button onclick="changename()">更改名稱</button>
-	<button type="button" id="collect" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  收集
-</button>
+	 <button type="button" id="collect" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#collectModal">收集</button>
+	
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+<div class="modal fade show" id="collectModal" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" style="display: block;" aria-modal="true" role="dialog">
+  <div class="modal-dialog modal-fullscreen">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title h4" id="exampleModalFullscreenLabel">Full screen modal</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -231,7 +230,6 @@ function load(){
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">返回</button>
-        
       </div>
     </div>
   </div>
