@@ -219,9 +219,21 @@ function load(){
 	  </header>
  <main id="main" >
 	 <p id="user"></p><button onclick="changename()">更改名稱</button>
-	 <button type="button" id="collect" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#collectModal">收集</button>
 	
-
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <button type="button"  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#collectModal">收集</button>
+	
+    </div>
+    <div class="col-4">
+       <button type="button" id="vs" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#vsModal">對戰</button>
+    </div>
+    <div class="col-4">
+     <button type="button"  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lotterymodal">抽獎</button>  
+    </div>
+  </div>
+</div>
 <!-- Modal -->
 <div class="modal fade" id="collectModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-fullscreen">
@@ -240,7 +252,7 @@ function load(){
     </div>
   </div>
 </div>
-	 <button type="button" id="vs" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#vsModal">對戰</button>
+	
 	<!-- Modal -->
 <div class="modal fade" id="vsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-fullscreen">
@@ -259,7 +271,7 @@ function load(){
     </div>
   </div>
 </div>
-	 <button type="button"  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lotterymodal">抽獎</button>  
+	
 	<!-- Modal -->
 <div class="modal fade" id="lotteryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-fullscreen">
