@@ -149,7 +149,10 @@ function load(){
 				}
                   
 			}	
-			
+			function hide(){
+				document.getElementById("collectModal")
+				collectModal.hide()
+			}
 	</script>
   <style>
 	  
@@ -229,7 +232,7 @@ function load(){
         ...
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">返回</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="hide()">返回</button>
       </div>
     </div>
   </div>
