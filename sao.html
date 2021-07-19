@@ -154,22 +154,24 @@ function load(){
 			function lottery1(){
 				if(money>=99){
 					money-=99
-					
+					screenmoney=document.getElementById("alp")
+					screenmoney.innerHTML=money
 				}else{
 				alert("阿爾法幣不足")	
 					
 				}
-				screenmoney.innerHTML="阿爾法幣:"+money+"元"
+				
 			}
 		function lottery10(){
 				if(money>=900){
 					money-=900
-					
+					screenmoney=document.getElementById("alp")
+					screenmoney.innerHTML=money
 				}else{
 					alert("阿爾法幣不足")	
 					
 				}
-			screenmoney.innerHTML="阿爾法幣:"+money+"元"
+			
 			}
 	</script>
   <style>
@@ -241,7 +243,7 @@ function load(){
 	  </header>
  <main id="main" >
 	 <p id="user"></p><button type="button" class="btn btn-outline-secondary" onclick="changename()">更改名稱</button>
-	 <p id="alp">阿爾法幣:200元</p>
+	 <p ><span id="alp">阿爾法幣:200元</span></p>
 	 <div  class="container" onclick="playaudio()">
 		  <div class="row">
 	  <img id="imgmain"src="https://github.com/RSMN574/RSMN574.github.io/blob/main/IMG_20210716_181039.png?raw=true">
