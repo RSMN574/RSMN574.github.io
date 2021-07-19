@@ -18,7 +18,7 @@
 		var main
 		var name
 		var user
-		
+		var money=0
 		window.onload=function (){
 var sw=document.body.clientWidth
 			if(sw<1000){
@@ -149,7 +149,22 @@ function load(){
 				}
                   
 			}	
-			
+			function lottery1(){
+				if(money>=99){
+					money-=99
+				}else{
+				alert("阿爾法幣不足")	
+					
+				}
+			}
+		function lottery10(){
+				if(money>=900){
+					money-=900
+				}else{
+					alert("阿爾法幣不足")	
+					
+				}
+			}
 	</script>
   <style>
 	  
@@ -224,6 +239,7 @@ function load(){
 		  <div class="row">
 	  <img id="imgmain"src="https://github.com/RSMN574/RSMN574.github.io/blob/main/IMG_20210716_181039.png?raw=true">
 			   </div >
+		 <p id="alp">阿爾法幣:</p>
 		 </div>
 	 <br><br><br>
 <div class="container">
@@ -288,7 +304,13 @@ function load(){
       </div>
       <div class="modal-body">
         <img src="https://obs.line-scdn.net/0hUBWB5hYmCm1qOyJCpyF1OlBtCQJZVxluDg1bbilVVFkTDkRpV1gQWEZoAFpOXE0zBAlMAkozEVwUAkhvUF8Q/w1200">
-	      <button type="button" class="btn btn-warning">抽1次</button>
+	      <div class="container">
+  <div class="row">
+    <div class="col">
+	      <button type="button" class="btn btn-warning" onclick="lottery1()">抽1次(阿爾法幣99)</button></div>
+	       <div class="col"><button type="button" class="btn btn-warning" onclick="lottery10()">抽10次(阿爾法幣900)</button></div>
+	  </div>
+		      </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">返回</button>
