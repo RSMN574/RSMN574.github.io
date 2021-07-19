@@ -19,7 +19,7 @@
 		var name
 		var user
 		var money=200
-		document.getElementById("alp").innerHTML= money
+		var screenmoney=document.getElementById("alp")
 		
 		window.onload=function (){
 var sw=document.body.clientWidth
@@ -154,6 +154,7 @@ function load(){
 			function lottery1(){
 				if(money>=99){
 					money-=99
+					screenmoney.innerHTML=money
 				}else{
 				alert("阿爾法幣不足")	
 					
@@ -162,6 +163,7 @@ function load(){
 		function lottery10(){
 				if(money>=900){
 					money-=900
+					screenmoney.innerHTML=money
 				}else{
 					alert("阿爾法幣不足")	
 					
