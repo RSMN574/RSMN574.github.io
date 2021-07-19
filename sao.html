@@ -18,7 +18,9 @@
 		var main
 		var name
 		var user
-		var money=0
+		var money=200
+		document.getElementBtId("alp").innerHTML= money
+		
 		window.onload=function (){
 var sw=document.body.clientWidth
 			if(sw<1000){
@@ -235,7 +237,7 @@ function load(){
 	  </header>
  <main id="main" >
 	 <p id="user"></p><button type="button" class="btn btn-outline-secondary" onclick="changename()">更改名稱</button>
-	  <p id="alp">阿爾法幣:0元</p>
+	 <p >阿爾法幣:<span id="alp">200元</span></p>
 	 <div  class="container" onclick="playaudio()">
 		  <div class="row">
 	  <img id="imgmain"src="https://github.com/RSMN574/RSMN574.github.io/blob/main/IMG_20210716_181039.png?raw=true">
