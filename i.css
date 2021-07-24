@@ -31,3 +31,11 @@
 		font-family:微軟正黑體;
 	}
  
+.hr{
+width:40px;
+height:5px;
+background-color:#359bdb;
+border:none;
+border-radius:2px;
+float:left;
+}
