@@ -18,7 +18,7 @@
 		var main
 		var name
 		var user
-		var money=0
+		var money=localStorage.money
 		var screenmoney=document.getElementById("alp")
 		
 		window.onload=function (){
@@ -66,6 +66,7 @@ function load(){
 			main=document.getElementById("main")
 			main.style.display="block"
 			screenmoney=document.getElementById("alp")
+			money=localStorage.money
 			localStorage.setItem("money",money)
 			screenmoney.innerHTML=localStorage.money
 		}
@@ -153,6 +154,7 @@ function load(){
                   
 			}	
 			function lottery1(){
+				money=localStorage.money
 				if(money>=99){
 					money-=99
 					screenmoney=document.getElementById("alp")
@@ -167,8 +169,10 @@ function load(){
 				
 			}
 		function lottery10(){
+			money=localStorage.money
 				if(money>=900){
 					money-=900
+					
 					screenmoney=document.getElementById("alp")
 					
 					screenmoney.innerHTML=localStorage.money
