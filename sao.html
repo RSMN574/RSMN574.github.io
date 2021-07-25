@@ -65,7 +65,7 @@ function load(){
 			user.innerHTML=localStorage.name+"&nbsp;"
 			main=document.getElementById("main")
 			main.style.display="block"
-			
+			localStorage.setItem("money",money)
 			
 		}
 		function changename(){
@@ -155,7 +155,9 @@ function load(){
 				if(money>=99){
 					money-=99
 					screenmoney=document.getElementById("alp")
-					screenmoney.innerHTML=money
+					screenmoney.innerHTML=localStorage.money
+					localStorage.removeItem('money')
+				localStorage.setItem("money",money)
 				}else{
 				alert("阿爾法幣不足")	
 					
@@ -166,7 +168,10 @@ function load(){
 				if(money>=900){
 					money-=900
 					screenmoney=document.getElementById("alp")
-					screenmoney.innerHTML=money
+					screenmoney.innerHTML=localStorage.money
+					
+					localStorage.removeItem('money')
+				localStorage.setItem("money",money)
 				}else{
 					alert("阿爾法幣不足")	
 					
