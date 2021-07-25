@@ -65,6 +65,7 @@ function load(){
 			user.innerHTML=localStorage.name+"&nbsp;"
 			main=document.getElementById("main")
 			main.style.display="block"
+			screenmoney=document.getElementById("alp")
 			localStorage.setItem("money",money)
 			screenmoney.innerHTML=localStorage.money
 		}
@@ -155,6 +156,7 @@ function load(){
 				if(money>=99){
 					money-=99
 					screenmoney=document.getElementById("alp")
+					
 					screenmoney.innerHTML=localStorage.money
 					
 				localStorage.setItem("money",money)
@@ -168,6 +170,7 @@ function load(){
 				if(money>=900){
 					money-=900
 					screenmoney=document.getElementById("alp")
+					
 					screenmoney.innerHTML=localStorage.money
 					
 					
