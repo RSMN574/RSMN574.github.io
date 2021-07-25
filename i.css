@@ -43,13 +43,9 @@ border-radius:2px;
 	
 	font-family:微軟正黑體;
 }
-.w-12 {
-    width: 3rem;
-}
-.h-1 {
-    height: .25rem;
-}
-.bg-primary {
+
+.primary {
     background-color: #3ddb84;
-  
+  height: .25rem;
+	width: 3rem;
 }
