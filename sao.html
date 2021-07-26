@@ -23,7 +23,7 @@
 		
 		window.onload=function (){
 var sw=document.body.clientWidth
-			if(sw<1000){
+			if(sw<900){
 				alert("建議使用更大的螢幕遊玩")
 			}
 	if(localStorage.name){
@@ -33,6 +33,8 @@ var sw=document.body.clientWidth
 		
 	}else{
 		console.log("無資料")
+		localStorage.money=200
+		
 	}
 }
 function load(){
@@ -67,7 +69,6 @@ function load(){
 			main.style.display="block"
 			screenmoney=document.getElementById("alp")
 			money=localStorage.money
-			localStorage.setItem("money",money)
 			screenmoney.innerHTML=localStorage.money
 		}
 		function changename(){
