@@ -158,10 +158,10 @@ function load(){
 				if(money>=99){
 					money-=99
 					screenmoney=document.getElementById("alp")
-					
+					localStorage.money=money
 					screenmoney.innerHTML=localStorage.money
 					
-				localStorage.setItem("money",money)
+				
 				}else{
 				alert("阿爾法幣不足")	
 					
