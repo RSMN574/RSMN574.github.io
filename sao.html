@@ -191,17 +191,19 @@ function load(){
 		 function lottery(){
 			var re=Math.floor(Math.random()*200)
 			var lod=document.getElementById("lod")
-			if(re<100){
-				
+			if(re<2){
+				lod.style.display="block"
 				lod.innerHTML="<img class='cardg' src='https://github.com/RSMN574/RSMN574.github.io/blob/sao/%E6%9C%89%E7%B4%80-%E6%88%80%E6%84%9B%E5%90%B8%E8%A1%80%E9%AC%BCc5.png?raw=true'><br><p>恭喜你中有紀-戀愛吸血鬼c5</p>"
-				
+				setTimeOut(function(){
+					lod.style.display="none"
+				}4000)
 			}
 		}
 	</script>
   <style>
 	  .cardg{
 		  
-		  width:500px;
+		  width:300px;
 		  
 		  
 		  
