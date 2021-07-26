@@ -1,6 +1,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+@font-face {
+  font-family:ex;
+  src: url(https://rsmn574.github.io/NotoSansTC-Thin.otf);
+}
+
+.ex{
+ font-family:ex;
+ 
+}
+
+
+
+
+
 #div{
  background-color:#fff;
  
