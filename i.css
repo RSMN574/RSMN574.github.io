@@ -54,7 +54,7 @@ border-radius:2px;
 	margin:15px ;
 }
 @media (prefers-color-scheme: dark) {
-		 body{background: #18191a;}
+		 body{background-color: #18191a;}
 		.ahover{
 	color:#ffffff;
 	  text-decoration:none;
@@ -65,7 +65,10 @@ border-radius:2px;
     transition: 0.2s;
 		
 	}
+		.card-body{
+			background-color: #18191a;
 			
+	}
 		
 	
 	}
