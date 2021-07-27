@@ -53,3 +53,19 @@ border-radius:2px;
 .pr{
 	margin:15px ;
 }
+@media (prefers-color-scheme: dark) {
+		 body{background: #18191a;}
+		.ahover{
+	color:#ffffff;
+	  text-decoration:none;
+	}
+	.ahover:hover{
+		color:#1181ff;
+		text-decoration:none;
+    transition: 0.2s;
+		
+	}
+			
+		
+	
+	}
