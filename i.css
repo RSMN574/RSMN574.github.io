@@ -2,6 +2,9 @@
   font-family:h2;
   src: url(https://rsmn574.github.io/NotoSansTC-Bold.otf);
 }
+#nav{
+ background-color:#5089C6;
+}
 	.mt-0{
 		font-family:h2;
 		
@@ -92,4 +95,7 @@ border-radius:2px;
 	.card{
 	border-color:#6b6b6b;
 	}
+	#nav{
+ background-color:#293B5F;
+}
 	}
