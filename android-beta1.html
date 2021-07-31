@@ -16,11 +16,16 @@
 	@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
 	
 
-.collapsing {
-  width: 0;
-  transition-property: width;
+#navbarToggleExternalContent{
+  transform: translateX(-100%);
+  transition: transform .35s ease;
+  display: block;
   height: 100%;
-  white-space: nowrap;
+  min-height: 100%;
+}
+
+#navbarToggleExternalContent.menu-show{
+  transform: translateX(0%);
 }
 
 
@@ -498,7 +503,15 @@ border-radius:2px;
   </section>
 		</div>
 	<script>
+const $menu = $('#navbarToggleExternalContent');
 
+$menu.on('show.bs.collapse', function () {
+  $menu.addClass('menu-show');
+});
+
+$menu.on('hide.bs.collapse', function () {
+  $menu.removeClass('menu-show');
+});
 		</script>
 		
 		
