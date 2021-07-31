@@ -136,10 +136,11 @@ border-radius:2px;
 	
 </head>
 <body>
-	<script>
+	
+<script>
 		
 		var nd1=document.getElementById("navbardropdown1")
-		function nd1(){
+		function nd1f(){
 			console.log("onclick")
 			if(nd1.style.display="none"){
 			document.getElementById("dropdown1").style.display="block"
@@ -154,7 +155,6 @@ border-radius:2px;
 		}
 		
 		</script>
-
 <nav class="navbar navbar-expand-lg navbar-dark "id="nav">
   <a class="navbar-brand" href="https://rsmn574.github.io">Android手機王</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -164,7 +164,7 @@ border-radius:2px;
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbardropdown1" role="button" aria-haspopup="true" aria-expanded="false" onclick="nd1()">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardropdown1" role="button" aria-haspopup="true" aria-expanded="false" onclick="nd1f()">
           Android資訊 
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown1">
