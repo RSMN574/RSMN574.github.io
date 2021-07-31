@@ -138,6 +138,19 @@ border-radius:2px;
 <body>
 	<script>
 		
+		var nd1=document.getElementById("navbarDropdown1")
+		nd1.onclick=>{
+			if(nd1.style.display="none"){
+			document.getElementById("Dropdown1").style.display="block"
+			}else if(nd1.style.display="block"){
+				
+				document.getElementById("Dropdown1").style.display="none"
+			}else{
+				
+				document.getElementById("Dropdown1").style.display="block"
+			}
+		}
+		
 		</script>
 
 <nav class="navbar navbar-expand-lg navbar-dark "id="nav">
@@ -149,10 +162,10 @@ border-radius:2px;
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" aria-haspopup="true" aria-expanded="false">
           Android資訊 
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="Dropdown1">
           <a class="dropdown-item" href="https://rsmn574.github.io/androidsys.html">Android系統</a>
 	<a class="dropdown-item" href="https://rsmn574.github.io/android12.html">Android 12專區</a>
 	<a class="dropdown-item" href="https://rsmn574.github.io/android-app.html">Android APP</a>	
@@ -163,7 +176,7 @@ border-radius:2px;
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Android手機
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="Dropdown2">
           <a class="dropdown-item" href="https://rsmn574.github.io/三星.html">三星</a>
           <a class="dropdown-item" href="https://rsmn574.github.io/小米.html">小米</a>
           <a class="dropdown-item" href="https://rsmn574.github.io/OPPO.html">OPPO</a>
@@ -178,7 +191,7 @@ border-radius:2px;
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Android刷機 
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="Dropdown3">
           <a class="dropdown-item" href="https://rsmn574.github.io/Android-TWRP.html">Android TWRP</a>
           <a class="dropdown-item" href="https://rsmn574.github.io/Android-flash.html">Android刷機</a>
          <a class="dropdown-item" href="https://rsmn574.github.io/magisk-mod.html">magisk 模組</a>
@@ -190,7 +203,7 @@ border-radius:2px;
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           關於我們 
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="Dropdown4">
           <a class="dropdown-item" href="https://rsmn574.github.io/社群網站.html">社群網站</a>
           <a class="dropdown-item" href="https://rsmn574.github.io/介紹.html">Android手機王 介紹</a>
           <a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLSfZdrlM5mZDUYbIfLHNo3TVjDXOJeWdwl55-qipSpNLRFdh4Q/viewform?usp=sf_link">加入我們</a>
