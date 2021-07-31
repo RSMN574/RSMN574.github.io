@@ -158,7 +158,6 @@ border-radius:2px;
 </head>
 <body>
 	
-<div id="mmav">
 <nav class="navbar navbar-expand-lg navbar-dark "id="nav">
   <a class="navbar-brand" href="https://rsmn574.github.io">Android手機王</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -171,7 +170,7 @@ border-radius:2px;
         <a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="hh1" v-on:mouseover="hh1">
           Android資訊 
         </a>
-        <div :class="{'dropdown-menu':h1dd }" aria-labelledby="navbarDropdown" id="dropdown1">
+        <div class="dropdown-menu " aria-labelledby="navbarDropdown" id="dropdown1">
           <a class="dropdown-item" href="https://rsmn574.github.io/androidsys.html">Android系統</a>
 	<a class="dropdown-item" href="https://rsmn574.github.io/android12.html">Android 12專區</a>
 	<a class="dropdown-item" href="https://rsmn574.github.io/android-app.html">Android APP</a>	
@@ -221,7 +220,7 @@ border-radius:2px;
   </div>
 	
 </nav>
-	</div>
+	
 <br>
 	
   
@@ -482,23 +481,7 @@ border-radius:2px;
   </section>
 		
 	<script>
-	const nav={
-		
-		data(){
-			
-			return {
-				h1dd:ture
-			}
-		}
-		
-		methods:{
-		hh1:function(){
-			
-			
-		}
-	}
-	}
-		Vue.createApp(nav).mount('#mmav')
+	
 		</script>
 		
 		
