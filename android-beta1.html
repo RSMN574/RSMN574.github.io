@@ -138,16 +138,18 @@ border-radius:2px;
 <body>
 	<script>
 		
-		var nd1=document.getElementById("navbarDropdown1")
+		var nd1=document.getElementById("navbardropdown1")
 		nd1.onclick=>{
+			console.log("onclick")
 			if(nd1.style.display="none"){
-			document.getElementById("Dropdown1").style.display="block"
+			document.getElementById("dropdown1").style.display="block"
+				
 			}else if(nd1.style.display="block"){
 				
-				document.getElementById("Dropdown1").style.display="none"
+				document.getElementById("dropdown1").style.display="none"
 			}else{
 				
-				document.getElementById("Dropdown1").style.display="block"
+				document.getElementById("dropdown1").style.display="block"
 			}
 		}
 		
@@ -162,10 +164,10 @@ border-radius:2px;
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardropdown1" role="button" aria-haspopup="true" aria-expanded="false">
           Android資訊 
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="Dropdown1">
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown1">
           <a class="dropdown-item" href="https://rsmn574.github.io/androidsys.html">Android系統</a>
 	<a class="dropdown-item" href="https://rsmn574.github.io/android12.html">Android 12專區</a>
 	<a class="dropdown-item" href="https://rsmn574.github.io/android-app.html">Android APP</a>	
