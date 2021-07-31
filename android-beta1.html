@@ -25,6 +25,10 @@
   font-family:h2;
   src: url(https://rsmn574.github.io/NotoSansTC-Bold.otf);
 }
+	#nd1{
+		display:none;
+		
+	}
 	.mt-0{
 		font-family:h2;
 		
@@ -139,8 +143,9 @@ border-radius:2px;
 	
 <script>
 		
-		var nd1=document.getElementById("navbardropdown1")
+		
 		function nd1f(){
+			var nd1=document.getElementById("navbardropdown1")
 			console.log("onclick")
 			if(nd1.style.display=="none"){
 			document.getElementById("dropdown1").style.display="block"
