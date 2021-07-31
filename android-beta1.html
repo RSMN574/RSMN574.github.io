@@ -144,18 +144,18 @@ border-radius:2px;
 <script>
 		
 		
-		function nd1f(){
-			var nd1=document.getElementById("navbardropdown1")
+		function nd2f(){
+			var nd1=document.getElementById("navbardropdown2")
 			console.log("onclick")
-			if(nd1.style.display=="none"){
-			document.getElementById("dropdown1").style.display="block"
+			if(nd2.style.display=="none"){
+			document.getElementById("dropdown2").style.display="block"
 				
 			}else if(nd1.style.display=="block"){
 				
-				document.getElementById("dropdown1").style.display="none"
+				document.getElementById("dropdown2").style.display="none"
 			}else{
 				
-				document.getElementById("dropdown1").style.display="block"
+				document.getElementById("dropdown2").style.display="block"
 			}
 		}
 		
@@ -169,7 +169,7 @@ border-radius:2px;
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbardropdown1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" onclick="nd1f()">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardropdown1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >
           Android資訊 
         </a>
         <div class="dropdown-menu " aria-labelledby="navbarDropdown" id="dropdown1">
@@ -180,7 +180,7 @@ border-radius:2px;
       </li>
 	       
 	    <li class="nav-item dropdown show">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"  aria-haspopup="true" aria-expanded="true">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"  aria-haspopup="true" aria-expanded="true" onclick="nd2f()">
         Android手機
         </a>
         <div class="dropdown-menu show" aria-labelledby="navbarDropdown" id="Dropdown2">
