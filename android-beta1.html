@@ -484,7 +484,9 @@ border-radius:2px;
 	<script>
 	var hh1=document.getElementById("hh1")	
 	hh1.addEventListener("mouseover", function() {	
-		hh1.class="dropdown-menu show"
+		
+		hh1.aria-expanded="ture"
+		document.getElementById("dropdown1").class="dropdown-menu show"
 	})
 		
 		
