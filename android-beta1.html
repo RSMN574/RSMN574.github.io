@@ -16,7 +16,12 @@
 	@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
 	
 
-
+.collapsing {
+  width: 0;
+  transition-property: width;
+  height: 100%;
+  white-space: nowrap;
+}
 
 
 	p{
@@ -164,7 +169,7 @@ border-radius:2px;
 	
 	<span class="navbar-toggler-icon"></span>
   </button>
-
+<div class="collapse width position-fixed" >
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item dropdown">
@@ -219,7 +224,7 @@ border-radius:2px;
     </ul>
     
   </div>
-	
+	</div>
 </nav>
 	
 <br>
