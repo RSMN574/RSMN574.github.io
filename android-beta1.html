@@ -168,7 +168,7 @@ border-radius:2px;
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="hh1">
+        <a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="hh1" v-on:mouseover="hh1">
           Android資訊 
         </a>
         <div class="dropdown-menu " aria-labelledby="navbarDropdown" id="dropdown1">
@@ -484,7 +484,19 @@ border-radius:2px;
 	<script>
 	const nav={
 		
+		data(){
+			
+			return {
+				hh1
+			}
+		}
 		
+		methods:{
+		hh1:function(){
+			
+			
+		}
+	}
 	}
 		Vue.createApp(nav).mount('#mmav')
 		</script>
