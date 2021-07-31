@@ -164,12 +164,18 @@ border-radius:2px;
 	
 <nav class="navbar navbar-expand-lg navbar-dark "id="nav">
   <a class="navbar-brand" href="https://rsmn574.github.io">Android手機王</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-   
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent">
 	
 	<span class="navbar-toggler-icon"></span>
   </button>
-<div class="collapse width position-fixed" id="navbarSupportedContent">
+ <div class="collapse width position-fixed" id="navbarToggleExternalContent">
+    <!-- https://stackoverflow.com/a/10055302/9265131 -->
+    <div class="bg-dark py-4">
+      <h4 class="text-white mx-4">Collapsed content</h4>
+      <span class="text-muted mx-4">Toggleable via the navbar brand.</span>
+    </div>
+  </div>
+	
   <div class="collapse navbar-collapse" >
     <ul class="navbar-nav mr-auto">
       <li class="nav-item dropdown">
