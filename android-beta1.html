@@ -17,7 +17,51 @@
 	
 
 
+@media screen and (max-width: 768px) {
+/left/
+.side-collapse-container-left{
+position:relative;
+left:0;
+transition:left .4s;
+}
+.side-collapse-container-left.out{
+left:70%;
+}
+.side-collapse-left {
+top:50px;
+bottom:0;
+left:0;
+width:70%;
+position:fixed;
+overflow:hidden;
+ransition:width .4s;
+}
+.side-collapse-left.in {
+width:0;
+}
+/right/
+.side-collapse-container-right{
+position:relative;
+right:0;
+transition:right .4s;
+}
+.side-collapse-container-right.out{
+right:70%;
+}
 
+.side-collapse-right {
+top:50px;
+bottom:0;
+right:0;
+width:70%;
+position:fixed;
+overflow:hidden;
+transition:width .4s;
+}
+.side-collapse-right.in {
+width:0;
+}
+}
 
 
 	p{
@@ -160,11 +204,11 @@ border-radius:2px;
 	
 <nav class="navbar navbar-expand-lg navbar-dark "id="nav">
   <a class="navbar-brand" href="https://rsmn574.github.io">Android手機王</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse-side" data-target-sidebar=".side-collapse-right" data-target-content=".side-collapse-container-right" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse side-collapse-right in" id="navbarSupportedContent ">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="hh1" v-on:mouseover="hh1">
@@ -225,7 +269,10 @@ border-radius:2px;
 	
   
 	<!--
---><div class="alert alert-warning" role="alert" >
+
+-->
+	<div class="side-collapse-container-right">
+	<div class="alert alert-warning" role="alert" >
   <b>這個版本是開發版內測，存在一些不穩定的問題</b>
 	 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
@@ -479,9 +526,17 @@ border-radius:2px;
 				</svg></a>
 	
   </section>
-		
+		</div>
 	<script>
-	
+	$(function(){
+var sideslider = $(‘[data-toggle=collapse-side]’);
+var get_sidebar = sideslider.attr(‘data-target-sidebar’);
+var get_content = sideslider.attr(‘data-target-content’);
+sideslider.click(function(event){
+$(get_sidebar).toggleClass(‘in’);
+$(get_content).toggleClass(‘out’);
+});
+});
 		</script>
 		
 		
