@@ -585,10 +585,14 @@ const $menu = $('#navbarToggleExternalContent');
 
 $menu.on('show.bs.collapse', function () {
   $menu.addClass('menu-show');
+	
+var tops = $(document).scrollTop();
+$(document).bind("scroll",function (){$(document).scrollTop(tops); });
 });
 
 $menu.on('hide.bs.collapse', function () {
   $menu.removeClass('menu-show');
+	$(document).unbind("scroll");
 });
 		</script>
 		
