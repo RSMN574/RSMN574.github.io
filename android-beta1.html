@@ -589,8 +589,7 @@ $menu.on('show.bs.collapse', function () {
 var tops = $(document).scrollTop();
 $(document).bind("scroll",function (){$(document).scrollTop(tops); });
 	
-	$('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
-        return false;
+	
 });
 
 $menu.on('hide.bs.collapse', function () {
