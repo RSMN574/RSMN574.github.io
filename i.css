@@ -39,7 +39,10 @@
 		    opacity:0.4;
 		 transition: 0.3s ease-in-out;
 	}
-	
+	img{
+		
+		width:250px;
+}
  
 .hr{
 width:40px;
