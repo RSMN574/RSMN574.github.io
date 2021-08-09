@@ -27,8 +27,7 @@
 }
 #filter{
 	
-	filter: blur(5px);
-  z-index: -1;
+	
 	
 	
 	}
@@ -247,8 +246,8 @@ border-radius:2px;
   </style>
 	
 </head>
-<body lang="zh-Hant-TW" id="app">
-	<div id="filter">
+<body lang="zh-Hant-TW" id="filter">
+	
 <nav class="navbar navbar-expand-lg navbar-dark "id="nav">
   <a class="navbar-brand" href="https://rsmn574.github.io">Android手機王</a>
  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent">
@@ -638,7 +637,7 @@ border-radius:2px;
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v11.0&appId=1132290643886967&autoLogAppEvents=1" nonce="0a5uBPL7"></script>
 
 	
-	</div>
+
   
 	<section class="mb-4 bg-dark p-4">
    	<div class="container">
@@ -667,14 +666,14 @@ $menu.on('hide.bs.collapse', function () {
 });
 		
 		$(document).ready(function(){
- $("#filter").hide();
+ $("#filter").css("filter","blur(0px)");
 })
 		$("#update").click(function(){
-			if($("#filter").is(":hidden")) {
-  $("#filter").show();
+			if($("#filter").is(":blur(0px)")) {
+  $("#filter").css("filter","blur(5px)");
 			}else{
 				
-				  $("#filter").hide();
+				  $("#filter").css("filter","blur(0px)");
 			}
 });
 
