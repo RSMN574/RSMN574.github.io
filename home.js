@@ -1,7 +1,7 @@
 const app=Vue.createApp({});
 
 app.component('main-nav', { 
-  template: <nav class="navbar navbar-expand-lg navbar-dark "id="nav">
+  template: "<nav class="navbar navbar-expand-lg navbar-dark "id="nav">
   <a class="navbar-brand" href="https://rsmn574.github.io">Android手機王</a>
  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent">
 	
@@ -123,7 +123,7 @@ app.component('main-nav', {
     </ul>
 	    
     </div>
-  </div>
+  </div>"
 	
   
   
