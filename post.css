@@ -29,11 +29,7 @@
   font-family: 'Noto Sans TC', sans-serif;
  font-size:20px;
 }
-img{
-  max-width：100％; 
- height：auto; 
- 
- }
+
 h2{
  font-family:Microsoft JhengHei;
  
@@ -54,6 +50,17 @@ img{
    font-size:16px;
   
 }
+ @media screen and (min-width:1000px) and (max-width:900000000px){
+     img{
+	width:80%;
+	 }
+}
+  
+ @media screen and (min-width:10px) and (max-width:1000px){
+     img{
+	width:100%;
+	 }
+  }
 @media (prefers-color-scheme: dark) {
   
    body{
