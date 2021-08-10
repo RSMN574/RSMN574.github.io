@@ -5,6 +5,10 @@
 #nav{
  background-color:#5089C6;
 }
+body{
+	
+	 overflow-x: hidden
+}
 	.mt-0{
 		font-family:h2;
 		
