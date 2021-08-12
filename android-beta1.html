@@ -257,7 +257,7 @@ border-radius:2px;
 	
 <nav class="navbar navbar-expand-lg navbar-dark "id="nav">
   <a class="navbar-brand" href="https://rsmn574.github.io">Android手機王</a>
- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent">
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" onclick="topfunction()">
 	
 	<span class="navbar-toggler-icon"></span>
   </button>
@@ -691,7 +691,10 @@ $menu.on('hide.bs.collapse', function () {
 });
 		
 		
-		
+		function topfunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
 		</script>
 
