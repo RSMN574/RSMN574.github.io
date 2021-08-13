@@ -25,32 +25,9 @@
   font-family:h2;
   src: url(https://rsmn574.github.io/NotoSansTC-Bold.otf);
 }
-	.content{
-padding-top: 70px;
-}
 	
-	.blurViewport {
-position: fixed;
-background: #5089C6;
-height: 54px;
-		width:100%;
-left: 0%;
+	
 
-top: 0;
-overflow: hidden;
-z-index: 1029;
-}
-
-.blurViewport>.content-wrap .content {
-opacity: 0.7;
--webkit-filter: blur(10px);
-filter: blur(10px);
-}
-	
-#nav{
-	
-	opacity: 0.7;
-	}
 #filter{
 	
 	
@@ -726,16 +703,7 @@ $menu.on('hide.bs.collapse', function () {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
-$(function(){
-var getblurContent = $(".content");
-var pagecopy = getblurContent.clone(true);
-var blurryContent = $(".blurViewport .content-wrap");
-var blurryContentViewport = $(".blurViewport");
-blurryContent.append(pagecopy);
-$(window).scroll(function(){
-blurryContentViewport.scrollTop(window.pageYOffset);
-});
-});
+
 		</script>
 
 		
