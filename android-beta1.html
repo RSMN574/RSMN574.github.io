@@ -26,7 +26,22 @@
   src: url(https://rsmn574.github.io/NotoSansTC-Bold.otf);
 }
 	
-	
+	.blurViewport {
+position: fixed;
+background: #fff;
+height: 50px;
+left: 0;
+right: 0;
+top: 0;
+overflow: hidden;
+z-index: 1029;
+}
+
+.blurViewport>.content-wrap .content {
+opacity: 0.7;
+-webkit-filter: blur(15px);
+filter: blur(15px);
+}
 .content{
 padding-top: 70px;
 }
@@ -326,7 +341,7 @@ border-radius:2px;
   </div>
 	</div>
 </nav>
- <div class="blurViewport container">
+ <div class="blurViewport">
 <div class="content-wrap"></div>
 </div>
 	 <div class="collapse position-fixed" id="navbarToggleExternalContent">
@@ -706,6 +721,17 @@ $menu.on('hide.bs.collapse', function () {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+		
+		$(function(){
+var getblurContent = $(".content");
+var pagecopy = getblurContent.clone(true);
+var blurryContent = $(".blurViewport .content-wrap");
+var blurryContentViewport = $(".blurViewport");
+blurryContent.append(pagecopy);
+$(window).scroll(function(){
+blurryContentViewport.scrollTop(window.pageYOffset);
+});
+});
 		</script>
 
 		
