@@ -25,7 +25,19 @@
   font-family:h2;
   src: url(https://rsmn574.github.io/NotoSansTC-Bold.otf);
 }
-	
+  .dropdown-menu{
+  background-color: #fff;
+    opacity: 1;
+    border-radius:10px;
+    
+}
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+   
+ }
+ 
 	.blurViewport {
 position: fixed;
 background-color:#5089C6;
@@ -38,9 +50,9 @@ z-index: 1029;
 }
 
 .blurViewport>.content-wrap .content {
-opacity: 0.7;
--webkit-filter: blur(15px);
-filter: blur(15px);
+opacity: 0.8;
+-webkit-filter: blur(20px);
+filter: blur(20px);
 }
 .content{
 padding-top: 70px;
@@ -291,7 +303,7 @@ border-radius:2px;
         <a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="hh1">
           Android資訊 
         </a>
-        <div class="dropdown-menu " aria-labelledby="navbarDropdown" id="dropdown1">
+        <div class="dropdown-menu "   id="dropdown1">
           <a class="dropdown-item" href="https://rsmn574.github.io/androidsys.html">Android系統</a>
 	<a class="dropdown-item" href="https://rsmn574.github.io/android12.html">Android 12專區</a>
 	<a class="dropdown-item" href="https://rsmn574.github.io/android-app.html">Android APP</a>	
@@ -353,7 +365,7 @@ border-radius:2px;
         <a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="navbardropdown1" >
             Android資訊  
         </a>
-        <div class="dropdown-menu " aria-labelledby="navbarDropdown" id="dropdown1">
+        <div class="dropdown-menu "  id="dropdown1">
           <a class="dropdown-item" href="https://rsmn574.github.io/androidsys.html">Android系統</a>
 	<a class="dropdown-item" href="https://rsmn574.github.io/android12.html">Android 12專區</a>
 	<a class="dropdown-item" href="https://rsmn574.github.io/android-app.html">Android APP</a>	
@@ -403,7 +415,6 @@ border-radius:2px;
     </div>
   </div>
 	<!--
-
 --><div class="content">
 
 
@@ -733,6 +744,8 @@ $(window).scroll(function(){
 blurryContentViewport.scrollTop(window.pageYOffset);
 });
 });
+ 
+   
 		</script>
 
 		
