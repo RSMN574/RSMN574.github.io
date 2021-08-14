@@ -10,7 +10,7 @@
   padding: 0 10px;
   margin: 50px ;
    position: fixed;
- 
+ z-index: 40000;
 }
 
 .menu-bar li {
