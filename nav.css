@@ -16,7 +16,7 @@
 #ns1{
   position: fixed;
   
-    top: 10%;
+    top: 15%;
     left: 25%;
    margin: 40px ;
     width: 200px;
@@ -27,8 +27,8 @@
   
 
    background-color: rgba(0, 0, 0, 0.4);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
 }
 .menu-bar li {
   list-style: none;
