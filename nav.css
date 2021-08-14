@@ -47,7 +47,7 @@
   box-shadow: 0px 3px 20px 0px black;
   transform: scale(1.2);
 }
-/* Page */
+
 
 html {
     box-sizing: border-box;
@@ -67,7 +67,7 @@ html {
     text-align: center;
 }
 
-/* Navigation */
+
 
 .nav {
     font-family: Georgia, Arial, sans-serif;
@@ -173,6 +173,7 @@ html {
    background-color: rgba(0, 0, 0, 0.4);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  filter: blur(10px);
 }
 
 .submenu::after, 
@@ -184,6 +185,9 @@ html {
     margin-left: -10px;
     border: 10px solid transparent;
     height: 0;
+    -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  filter: blur(10px);
 }
 
 .submenu::after {
