@@ -8,7 +8,7 @@ const nav = Vue.createApp({
 
 
 // 子元件
-.component('mainnav', {
+nav.component('mainnav', {
 	template: "
 <ul class="menu-bar">
 	<li class="navdd">Android資訊
