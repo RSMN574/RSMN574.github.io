@@ -207,7 +207,7 @@ html {
 
 .submenu-item {
     display: block;
-    text-align: left;
+  
 }
 
 .submenu-link,
@@ -218,9 +218,6 @@ html {
     padding: 10px 20px;
 }
 
-.submenu-link:hover {
-    text-decoration: underline;
-}
 
 .submenu-seperator {
     height: 0;
