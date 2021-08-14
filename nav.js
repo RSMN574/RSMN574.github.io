@@ -1,5 +1,5 @@
 const app = Vue.createApp({ 
-  components: { 'main-nav': { 
+  components: { 'mainnav': { 
   
     template: `<div>Hello Vue!</div>`, 
  } } });
