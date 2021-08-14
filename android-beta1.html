@@ -11,6 +11,7 @@
 	<link href="https://rsmn574.github.io/i.css" rel="stylesheet" type="text/css" />
 	<script src="https://unpkg.com/vue@next"></script>
 <script src="https://unpkg.com/vue@next"></script>
+	
 	<script src="https://rsmn574.github.io/home.js"></script>
 	<!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-610aafaa546bd97b"></script>
@@ -696,7 +697,7 @@ border-radius:2px;
 		
 </div>
 		</div>
-	
+	<mainnav>  </mainnav>
 	<br>
 	
 	<br>
@@ -749,8 +750,11 @@ $(window).scroll(function(){
 blurryContentViewport.scrollTop(window.pageYOffset);
 });
 });
- 
-   
+import mainnav  from 'main-nav.js';
+		const app = Vue.createApp({ 
+			components: { mainnav } 
+					 
+		});
 		</script>
 
 		
