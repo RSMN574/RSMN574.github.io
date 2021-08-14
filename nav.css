@@ -131,17 +131,17 @@ html {
     transform: translate(0, 5px);
 }
 
-.dropdown {
+.navdd {
     position: relative;
 }
 
-.dropdown .nav-link {
+.navdd .nav-link {
     padding-right: 15px;
     height: 17px;
     line-height: 17px;
 }
 
-.dropdown .nav-link::after {
+.navdd .nav-link::after {
     content: "";
     position:absolute;
     top: 6px;
