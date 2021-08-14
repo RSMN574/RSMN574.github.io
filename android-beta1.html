@@ -289,8 +289,8 @@ border-radius:2px;
   </style>
 	
 </head>
-<body lang="zh-Hant-TW" id="app">
-	
+<body lang="zh-Hant-TW" >
+	<div id="app">
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark "id="nav">
   <a class="navbar-brand" href="https://rsmn574.github.io">Android手機王</a>
  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" onclick="topfunction()">
@@ -719,6 +719,7 @@ border-radius:2px;
   </section>
 		</div>
 	</div>
+</div>
 	<script>
 const $menu = $('#navbarToggleExternalContent');
 
@@ -758,11 +759,13 @@ blurryContentViewport.scrollTop(window.pageYOffset);
 
 		<script type="module">
 			import mainnav  from 'nav.js';
-		const app = Vue.createApp({ 
-			components: { mainnav } 
+		const nav = Vue.createApp({ 
+			components: { 
+				mainnav
+				    } 
 					 
 		});
-			app.mount('#app');
+			nav.mount('#app');
 	</script>
 		</body>
 </html>
