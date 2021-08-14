@@ -186,6 +186,11 @@ html {
 .submenu::after {
     border-bottom-color: #fff;
 }
+.submenu {
+   background-color: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
 
 .submenu::before {
     margin-left: -13px;
