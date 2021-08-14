@@ -70,7 +70,7 @@ html {
 
 
 .nav {
-    font-family:  sans-serif;
+    font-family: Georgia, Arial, sans-serif;
     font-size: 14px;
 }
 
@@ -136,14 +136,16 @@ html {
 
 .navdd {
     position: relative;
-   font-family:  sans-serif;
+  font-family: Georgia, Arial, sans-serif;
+    font-size: 14px;
 }
 
 .navdd .nav-link {
     padding-right: 15px;
     height: 17px;
     line-height: 17px;
-   font-family:  sans-serif;
+  font-family: Georgia, Arial, sans-serif;
+    font-size: 14px;
 }
 
 .navdd .nav-link::after {
@@ -175,7 +177,8 @@ html {
    background-color: rgba(0, 0, 0, 0.4);
    -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-    font-family:  sans-serif;
+    font-family: Georgia, Arial, sans-serif;
+    font-size: 14px;
 }
 
 .submenu::after, 
@@ -191,7 +194,7 @@ html {
 }
 
 .submenu::after {
-    
+    border-bottom-color: #fff;
 }
 
 
