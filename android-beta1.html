@@ -720,6 +720,10 @@ border-radius:2px;
 		</div>
 	</div>
 </div>
+<script type="module">
+			import mainnav  from 'nav.js';
+		
+	</script>
 	<script>
 const $menu = $('#navbarToggleExternalContent');
 
@@ -754,18 +758,15 @@ $(window).scroll(function(){
 blurryContentViewport.scrollTop(window.pageYOffset);
 });
 });
-
-		</script>
-
-		<script type="module">
-			import mainnav  from 'nav.js';
-		const nav = Vue.createApp({ 
+const nav = Vue.createApp({ 
 			components: { 
 				mainnav
 				    } 
 					 
 		});
 			nav.mount('#app');
-	</script>
+		</script>
+
+		
 		</body>
 </html>
