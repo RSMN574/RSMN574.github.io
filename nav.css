@@ -14,8 +14,9 @@
  z-index: 40000;
 }
 #ns1{
+  position: fixed;
    position: absolute;
-    top: 50px;
+    top: 55px;
     left: 25%;
    margin: 40px ;
     width: 200px;
