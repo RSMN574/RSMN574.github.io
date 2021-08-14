@@ -9,7 +9,7 @@ const nav = Vue.createApp({
 
 // 子元件
 nav.component('mainnav', {
-	template: "
+	template: `
 <ul class="menu-bar">
 	<li class="navdd">Android資訊
 	  <nav class="submenu">
@@ -37,9 +37,9 @@ nav.component('mainnav', {
                     <li class="submenu-item"><a href="#" class="submenu-link">Android APP</a></li>
                 </ul>
             </nav>
-	</li>
+	</li>`
   
-  "
+  
    
 });
 
