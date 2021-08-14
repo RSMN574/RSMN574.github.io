@@ -3,7 +3,7 @@
   border-radius: 25px;
   height: fit-content;
   display: inline-flex;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   align-items: center;
@@ -16,7 +16,7 @@
 #ns1{
   position: fixed;
   
-    top: 15%;
+    top: 12%;
     left: 25%;
    margin: 40px ;
     width: 200px;
