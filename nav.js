@@ -43,4 +43,4 @@ vm.component('nav', {
    
 });
 
-vm.mount('#app');
+nav.mount('#app');
