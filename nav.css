@@ -136,12 +136,14 @@ html {
 
 .navdd {
     position: relative;
+   font-family: Georgia, Arial, sans-serif;
 }
 
 .navdd .nav-link {
     padding-right: 15px;
     height: 17px;
     line-height: 17px;
+   font-family: Georgia, Arial, sans-serif;
 }
 
 .navdd .nav-link::after {
