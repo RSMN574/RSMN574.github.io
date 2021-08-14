@@ -10,7 +10,9 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
 	<link href="https://rsmn574.github.io/i.css" rel="stylesheet" type="text/css" />
 	
-<script  type="module" src="https://unpkg.com/vue@next"></script>
+<script  src="https://unpkg.com/vue@next">
+	import mainnav  from 'nav.js';
+	</script>
 	
 	<script src="https://rsmn574.github.io/home.js"></script>
 	<!-- Go to www.addthis.com/dashboard to customize your tools -->
@@ -751,7 +753,7 @@ $(window).scroll(function(){
 blurryContentViewport.scrollTop(window.pageYOffset);
 });
 });
-import mainnav  from 'nav.js';
+
 		const app = Vue.createApp({ 
 			components: { mainnav } 
 					 
