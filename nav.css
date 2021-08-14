@@ -8,18 +8,18 @@
   backdrop-filter: blur(10px);
   align-items: center;
   padding: 0 10px;
-  margin: 50px ;
+  margin: 40px ;
    position: fixed;
   left:25%;
  z-index: 40000;
 }
-.navsub{
+#1ns{
    position: absolute;
-    top: 100%;
-    left: 50%;
+    top: 40px;
+    left: 25%;
   
     width: 200px;
-    margin-left: -100px;
+  height:212px;
  z-index: 30000;
     border-radius: 3px;
    
