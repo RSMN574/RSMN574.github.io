@@ -128,7 +128,7 @@ html {
     font-weight: bold;
 }
 
-.nav-link::before {
+/*.nav-link::before {
     content: "";
     position: absolute;
     top: 100%;
@@ -148,7 +148,7 @@ html {
     -webkit-transform: translate(0, 5px);
     transform: translate(0, 5px);
 }
-
+*/
 .navdd {
     position: relative;
   font-family: Georgia, Arial, sans-serif;
