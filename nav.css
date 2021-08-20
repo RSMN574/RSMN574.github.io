@@ -512,6 +512,6 @@ html {
 	  
 	    .menu-bar {
 		  
-		display:inline;  
+		  display: inline-flex;
 	  }
 	}
