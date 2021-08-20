@@ -489,3 +489,27 @@ html {
 }
 	  
 	}
+  @media screen and (min-width:20px) and (max-width:569px){
+	  mainnav{
+		  
+		display:none;  
+	  }
+	    mobilenav{
+		  
+		display:block;  
+		  
+	  }
+	}
+
+  @media screen and (min-width:569px) and (max-width:999999999999px){
+	  mobilenav{
+		  
+		display:none;  
+		  
+	  }
+	  
+	    mainnav{
+		  
+		display:block;  
+	  }
+	}
