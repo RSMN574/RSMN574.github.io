@@ -509,9 +509,10 @@ html {
 		display:none;  
 		  
 	  }
-	  
-	    .menu-bar {
+	  .icon-bar{
 		  
-		  display: inline-flex;
+		display:none;  
+		  
 	  }
+	  
 	}
