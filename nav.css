@@ -10,8 +10,8 @@ header {
   align-items: center;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
     background-color: rgba(0, 0, 0, 0.4);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
 	  color: white;
   font-family: sans-serif;
   font-weight: bold;
@@ -105,8 +105,8 @@ header {
   will-change: transform;
   contain: paint;
     background-color: rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
 }
 
 #nav-content ul {
