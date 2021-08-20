@@ -492,11 +492,11 @@ html {
 	  
 	}
   @media screen and (min-width:20px) and (max-width:569px){
-	  mainnav{
+	.menu-bar{
 		  
 		display:none;  
 	  }
-	    mobilenav{
+	    header{
 		  
 		display:block;  
 		  
@@ -504,13 +504,13 @@ html {
 	}
 
   @media screen and (min-width:569px) and (max-width:999999999999px){
-	  mobilenav{
+	  header{
 		  
 		display:none;  
 		  
 	  }
 	  
-	    mainnav{
+	    .menu-bar {
 		  
 		display:block;  
 	  }
