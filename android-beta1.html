@@ -180,47 +180,13 @@ border-radius:2px;
 		 transition: 0.3s ease-in-out;
 	}
 	
-	#dropdown1{
-		border-radius:3px;
-		 transition: 0.3s ease-in-out;
-		
-	}
-	#dropdown2{
-		border-radius:3px;
-		 transition: 0.3s ease-in-out;
-		
-	}
-	#dropdown3{
-		border-radius:3px;
-		 transition: 0.3s ease-in-out;
-		
-	}
-	#dropdown4{
-		border-radius:3px;
-		 transition: 0.3s ease-in-out;
-		
-	} 
+	
 	@media screen and (min-width:999px) and (max-width:90000px){
 		
 	}
-	@media screen and (min-width:50px) and (max-width:1000px){
-	#navbardropdown1{
-		font-family:h2;
-		color:#fff;
-		}
-		#navbardropdown2{
-		font-family:h2;
-		color:#fff;
-		}
-		#navbardropdown3{
-		font-family:h2;
-		color:#fff;
-		}
-		#navbardropdown4{
-		font-family:h2;
-		color:#fff;
-		}
-	}
+	
+	  
+
 @media (prefers-color-scheme: dark) {
 		 body{
 			 background-color: #18191a;
@@ -265,6 +231,8 @@ border-radius:2px;
 
 	
 		<mainnav>  </mainnav>
+		
+		<mobilenav></mobilenav>
 	<!--
 -->
 <div id="exnav">
@@ -635,6 +603,36 @@ nav.component('mainnav', {
 	 
 });
 
+		nav.component('mobilenav', {
+	template: `
+	 <header tabindex="0">Header</header>
+  <div id="nav-container">
+    <div class="bg"></div>
+    <div class="button" tabindex="0">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </div>
+    <div id="nav-content" tabindex="0">
+      <ul>
+        <li><a href="#0">Android資訊</a></li>
+        <li><a href="#0">Android手機</a></li>
+        <li><a href="#0">Android刷機</a></li>
+        <li><a href="#0">關於我們</a></li>
+        <li><a href="#0">電玩專區</a></li>
+        
+      </ul>
+    </div>
+  </div>
+	
+	
+	
+	
+	`
+	
+
+	 
+});
 nav.mount('#app');
 		
 
