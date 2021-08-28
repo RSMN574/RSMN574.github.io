@@ -268,11 +268,12 @@ ul {
   border: 0;
   background: transparent;
   border-radius: 0;
-  height: 70px;
-  width: 30px;
+  
+  width: 150px;
   cursor: pointer;
   pointer-events: auto;
   margin-left: 60px;
+	 margin-top: 5px;
 	
 }
 
@@ -534,5 +535,8 @@ html {
 		display:none;  
 		  
 	  }
-	  
+	  .button{
+		  
+display:none;  
+	  }
 	}
