@@ -273,7 +273,7 @@ ul {
   cursor: pointer;
   pointer-events: auto;
   margin-left: 60px;
-	 margin-top: 5px;
+	 
 	
 }
 
@@ -538,5 +538,9 @@ html {
 	  .button{
 		  
 display:none;  
+	  }
+	  #logo{
+		display:none;  
+		  
 	  }
 	}
