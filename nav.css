@@ -87,7 +87,7 @@ header {
   margin-top: 5px;
 }
 #logo{
-	
+	width:150px;
 	   position: relative;
   display: flex;
   flex-direction: column;
