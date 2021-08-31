@@ -88,17 +88,12 @@ header {
 }
 #logo{
 	width:150px;
-	   position: relative;
+	   position:absolute;
+	top:3px;
+	left:30px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  z-index: 1;
-  -webkit-appearance: none;
  
-  cursor: pointer;
-  pointer-events: auto;
-  margin-left: 25px;
-  touch-action: manipulation;
+ 
 
 	 
 	
