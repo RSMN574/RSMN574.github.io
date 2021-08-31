@@ -86,7 +86,23 @@ header {
 .icon-bar + .icon-bar {
   margin-top: 5px;
 }
+#logo{
+	
+	   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  -webkit-appearance: none;
+ 
+  cursor: pointer;
+  pointer-events: auto;
+  margin-left: 25px;
+  touch-action: manipulation;
 
+	 
+	
+}
 #nav-container:focus-within .button {
   pointer-events: none;
 }
@@ -266,20 +282,7 @@ ul {
 
 
 
-#logo{
-	
-	  position: fixed;
-	left:40px;
-  display: flex;
- 
-  
-  width: 150px;
-  cursor: pointer;
-  pointer-events: auto;
-  margin-left: 60px;
-	 
-	
-}
+
 
 
 
