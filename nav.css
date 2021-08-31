@@ -515,7 +515,7 @@ html {
 }
 	  
 	}
-  @media screen and (min-width:20px) and (max-width:569px){
+  @media screen and(max-width:568px){
 	.menu-bar{
 		  
 		display:none;  
@@ -527,7 +527,7 @@ html {
 	  }
 	}
 
-  @media screen and (min-width:569px) and (max-width:999999999999px){
+  @media screen and (min-width:569px){
 	  header{
 		  
 		display:none;  
