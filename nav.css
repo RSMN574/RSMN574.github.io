@@ -2,9 +2,10 @@
 	
 	width:100px;
 	  
-	margin: 0 8px;
+	 display: flex;
   position:absolute;
-	left:;
+	
+	left:40;
 	
 }
 
