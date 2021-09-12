@@ -1,46 +1,59 @@
 const nav = Vue.createApp({
   data() {
     return {
-   
+    
     }
   }
 });
+export { };
 
-
-// 子元件
 nav.component('mainnav', {
 	template: `
-<ul class="menu-bar">
-	<li class="navdd">Android資訊
-	  <nav class="submenu">
-                <ul class="submenu-items">
-                    <li class="submenu-item"><a href="https://rsmn574.github.io/androidsys.html" class="submenu-link">Android系統</a></li>
-                    <li class="submenu-item"><a href="https://rsmn574.github.io/android12.html" class="submenu-link">Android12專區</a></li>
-                    <li class="submenu-item"><a href="#" class="submenu-link">Android APP</a></li>
-                </ul>
-            </nav>
-	</li>
-	<li class="navdd">Android資訊
-	  <nav class="submenu">
-                <ul class="submenu-items">
-                    <li class="submenu-item"><a href="https://rsmn574.github.io/androidsys.html" class="submenu-link">Android系統</a></li>
-                    <li class="submenu-item"><a href="https://rsmn574.github.io/android12.html" class="submenu-link">Android12專區</a></li>
-                    <li class="submenu-item"><a href="#" class="submenu-link">Android APP</a></li>
-                </ul>
-            </nav>
-	</li>
-  <li class="navdd">Android資訊
-	  <nav class="submenu">
-                <ul class="submenu-items">
-                    <li class="submenu-item"><a href="https://rsmn574.github.io/androidsys.html" class="submenu-link">Android系統</a></li>
-                    <li class="submenu-item"><a href="https://rsmn574.github.io/android12.html" class="submenu-link">Android12專區</a></li>
-                    <li class="submenu-item"><a href="#" class="submenu-link">Android APP</a></li>
-                </ul>
-            </nav>
-	</li>`
-  
-  
-   
+	
+  <div class="container" >
+	<ul class="menu-bar">
+	<img id="logo2" src="https://github.com/RSMN574/RSMN574.github.io/blob/main/234312620_4194227050664394_2296996146416159710_n.png?raw=true">
+	
+  <li>Android資訊</li>
+    <li>Android手機</li>
+  <li>Android刷機</li>
+  <li>關於我們</li>
+   <li>電玩專區</li>
+</ul>
+</div>`
+	 
 });
 
+		nav.component('mobilenav', {
+	template: `
+	 <header tabindex="0"></header>
+  <div id="nav-container">
+    <div class="bg"></div>
+     
+    <div class="button" tabindex="0">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </div>
+   <img id="logo" src="https://github.com/RSMN574/RSMN574.github.io/blob/main/234312620_4194227050664394_2296996146416159710_n.png?raw=true">
+    <div id="nav-content" tabindex="0">
+      <ul>
+        <li><a href="#0">Android資訊</a></li>
+        <li><a href="#0">Android手機</a></li>
+        <li><a href="#0">Android刷機</a></li>
+        <li><a href="#0">關於我們</a></li>
+        <li><a href="#0">電玩專區</a></li>
+        
+      </ul>
+    </div>
+  </div>
+	
+	
+	
+	
+	`
+	
+
+	 
+});
 nav.mount('#app');
