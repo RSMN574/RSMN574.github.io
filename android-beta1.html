@@ -11,7 +11,7 @@
 	<link href="https://rsmn574.github.io/i.css" rel="stylesheet" type="text/css" />
 	
 <script  src="https://unpkg.com/vue@next">
-	
+	import mnav from 'nav.js';
 	</script>
 	<link rel="stylesheet" href="nav.css" >
 	
@@ -575,6 +575,7 @@ border-radius:2px;
 
 
 	<script>
+		
 const $menu = $('#navbarToggleExternalContent');
 
 $menu.on('show.bs.collapse', function () {
@@ -610,16 +611,25 @@ blurryContentViewport.scrollTop(window.pageYOffset);
 });
 		
 const nav = Vue.createApp({
-  data() {
-    return {
+  
+    components: { mainnav
+		
+		
+		
+		},
+	  components: { 
+	mobilenav
+
+		
+		
+		
+		}
     
-    }
-  }
+  
 });
 
-
-// 子元件
-nav.component('mainnav', {
+		
+		/*nav.component('mainnav', {
 	template: `
 	
   <div class="container" >
@@ -670,7 +680,7 @@ nav.component('mainnav', {
 });
 nav.mount('#app');
 		
-
+*/
 
 		</script>
 
