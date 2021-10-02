@@ -13,38 +13,24 @@
 	
 	<link rel="shortcut icon" href="android-icon.ico">
 	<!--CSS--><style>
-	.pagination1{
-		transform:none;
-	 position: fixed;
-		top:90%;
-	 opacity:0.8;
-	z-index:333;
-		
-}
-	.pagination{
-	border-radius:7px;
-	}
+	
 	
 	.apag{
-		border-radius:7px;
-		 position: fixed;
-		top:90%;
-		z-index:313;
-		height:43px;
-		width:443.17px;
-		 -webkit-filter: blur(10px);
- filter: blur(10px);
-		background-color: rgba(28, 28, 27, 0.6);
+		border-radius: 25px;
+  height: fit-content;
+  display: inline-flex;
+  background-color: rgba(0, 0, 0, 0.4);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  align-items: center;
+  padding: 0 10px;
+  margin: 50px 0 0 0;
+   position: fixed;
+		top:90;
+  left:25%;
+ z-index: 40000;
 	}
-	  @media (min-width:700px){
-      .pagination1{
-	      
-	      font-size:20px;
-	      
-		  }
-  }
+	 
 	
   </style>
 </head>
@@ -242,21 +228,13 @@ Google 表示， 2018 年 5 月推出 Android App Bundle 以來，開發者社�
 
 	<br>
 
-       <nav aria-label="Page navigation example" class="pagination1 offset-md-4 offset-sm-4 offset-0" v-model="navb" id="pagi">
-  <ul class="pagination">
-    <li class="page-item active"><a class="page-link" href="#">Android系統<span class="sr-only">(current)</span></a></li>
-    <li class="page-item"><a class="page-link" href="https://rsmn574.github.io/android12.html">Android 12 專區</a></li>
-    <li class="page-item"><a class="page-link" href="https://rsmn574.github.io/android-app.html">Android APP</a></li>
-   
-  </ul>
-</nav>
-	<div class="apag offset-md-4 offset-sm-4 offset-0" id="apagi">
-		
-	</div>
+     <div class="apag offset-md-4 offset-sm-4 offset-0" id="apagi">
+	     
+	     <li></li>
     </div>
     
    <script>
-	   let nav=navigator.platform
+	 /*   let nav=navigator.platform
 	let pagi=document.getElementById("pagi")
 	let apagi=document.getElementById("apagi")
 	   if(nav==="Linux aarch64"){
@@ -265,13 +243,13 @@ Google 表示， 2018 年 5 月推出 Android App Bundle 以來，開發者社�
 		   
 		   
 	   }
-	   $(document).ready(function(){
+  $(document).ready(function(){
 
 $("apagi").width($(pagi).width)
 $("apagi").height($(pagi).height)
 
 });
-	   
+	   */
 	   
 	   
 
