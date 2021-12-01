@@ -106,9 +106,9 @@ border-radius:2px;
 	}
 .apag{
 		border-radius: 25px;
-   align-items: 35%;
+   
 		 padding:0px 0px 0px 35%;
-  justify-content: center;
+  justify-content:25%;
   display: inline-flex;
   background-color: rgba(248, 249, 250, 1);
   -webkit-backdrop-filter: blur(10px);
