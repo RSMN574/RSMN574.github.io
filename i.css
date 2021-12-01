@@ -104,3 +104,74 @@ border-radius:2px;
  background-color:#293B5F;
 }
 	}
+.apag{
+		border-radius: 25px;
+   align-items: center;
+		 padding:0px 0px 0px 35%;
+  justify-content: center;
+  display: inline-flex;
+  background-color: rgba(248, 249, 250, 1);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  
+ 
+ z-index: 40000;
+		
+	}
+	 .aapag>li{
+		 list-style: none;
+		  text-decoration:none;
+
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 12px 16px;
+  margin: 0 8px;
+  position: relative;
+  cursor: pointer;
+
+		 
+	}
+	
+	#msiw{
+			
+			 display: inline-flex;
+		}
+	
+	a:hover{
+		
+	text-decoration:none;	
+		
+		
+	}
+	.ach{
+		border-radius: 25px;
+		background-color: rgba(124, 198, 247,1);
+		
+	  color: white;
+	}
+	.liii{
+	 color:black;
+	
+	
+	}
+	@media screen and (max-width:400px){
+		
+		.apag{
+		border-radius: 25px;
+   
+		 
+
+  display: inline-flex;
+  background-color: rgba(248, 249, 250, 1);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  
+ 
+ z-index: 40000;
+		
+	}
+		#msiw{
+			left:%;
+			 display: inline-flex;
+		}
+	}
