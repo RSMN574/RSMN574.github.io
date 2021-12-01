@@ -105,9 +105,9 @@ border-radius:2px;
 }
 	}
 .apag{
-	height: 100px;
-　position: relative;
-　margin-top: -100px;
+	height: 60px;
+　position: fixed;
+　
 		border-radius: 25px;
    
 		 padding:0px 0px 0px 35%;
