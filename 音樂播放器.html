@@ -14,7 +14,7 @@
   <body >
     <div id="all">
 
-   <input type="file" accept=".mp3,.wav,.ogg" multiple="multiple" @change="getFiles($event)">
+   <input type="file" accept=".mp3,.wav,.ogg" multiple="multiple" @change="getFiles(e)">
       <p>  {{upload}}</p>
     <script>
       
@@ -25,7 +25,8 @@
         
         
       }
-      },mothods:{
+      },
+        methods:{
         getFiles(e){
           console.log(e.target.files)
            return this.upload=e.target.files
