@@ -11,7 +11,27 @@
     
 <script src="https://unpkg.com/vue@next"></script>
   </head>
-  <body>
+  <body >
+    <div id="all">
+
    <input type="file" accept=".mp3,.wav,.ogg" multiple="multiple" v-model="upload">
+    <script>
+      
+      const vm=Vue.createApp({
+      data(){
+      return{
+      
+        
+        
+      }
+      }
+      
+      })
+      
+      vm.mount("#all")
+    </script>
+      
+            
+    </div>
   </body>
 </html>
