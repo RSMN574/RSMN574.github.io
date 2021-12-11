@@ -14,7 +14,7 @@
   <body >
     <div id="all">
 
-   <input type="file" accept=".mp3,.wav,.ogg" multiple="multiple" @change="getFiles(e)">
+   <input type="file" accept=".mp3,.wav,.ogg" multiple="multiple" @change="getFiles($event)">
       <p>  {{upload}}</p>
     <script>
       
