@@ -14,7 +14,7 @@
   <body >
     <div id="all">
 
-   <input type="file" accept=".mp3,.wav,.ogg" multiple="multiple" v-model="upload">
+   <input type="file" accept=".mp3,.wav,.ogg" multiple="multiple" @change="getFile(e)">
       <p>  {{upload}}</p>
     <script>
       
@@ -25,6 +25,13 @@
         
         
       }
+      },mothods:{
+        getFile(){
+           upload:e.target.files
+          
+        }
+        
+        
       }
       
       })
