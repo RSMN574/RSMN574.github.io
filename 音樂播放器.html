@@ -14,7 +14,7 @@
   <body >
     <div id="all">
 
-   <input type="file" accept=".mp3,.wav,.ogg" multiple="multiple" @change="getFiles(e)">
+   <input type="file" accept=".mp3,.wav,.ogg" multiple="multiple" @change="getFiles(e)"  :value="fileValue">
       <p>  {{upload}}</p>
     <script>
       
@@ -28,8 +28,8 @@
       },
         methods:{
         getFiles(e){
-          console.log(e.value)
-           return this.upload=e.value
+          console.log(this.fileValue)
+           return this.upload=this.fileValue
           
         }
         
