@@ -1,5 +1,5 @@
 
-
+<!--
 <!doctype html>
 <html  lang="zh">
   <head>
@@ -14,10 +14,18 @@
   <body >
     <div id="all">
 
-   <input type="file" accept=".mp3,.wav,.ogg" multiple="multiple" @change="getFiles(e)"  :value="fileValue">
+   <input type="file" id="fileuploader"  accept=".mp3,.wav,.ogg" multiple="multiple" @change="getFiles(this.files)"  :value="fileValue">
       <p>  {{upload}}</p>
     <script>
-      
+    var y=  document.getElementById("fileuploader")
+    y.addEventListener("change",function(){
+        
+       console.log( y.files)
+    })
+    
+    
+    /*
+    
       const vm=Vue.createApp({
       
       data(){
@@ -29,21 +37,62 @@
       },
         methods:{
         getFiles(e){
-          const files=e.target.files
-          console.log(files)
+             
+          const file= (e)
+          console.log(file)
            return this.upload=this.fileValue
           
         }
-        
         
       }
       
       })
       
       vm.mount("#all")
+      */
     </script>
       
             
     </div>
   </body>
+</html>
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8" />
+<title>音樂播放器</title>
+</head>
+<body>
+<div id="app">
+<input id="fileuploader" type="file" accept=".mp3, .wav, .ogg" multiple @change="getUploadList($event)" />
+<template v-if="uploadList.length>0">
+<div v-for="e in uploadList" :key="e">{{e}}</div>
+</template>
+<template v-else>
+<div>nothings</div>
+</template>
+</div>
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+const app = Vue.createApp({
+data() {
+return {
+uploadList: [],
+};
+},
+methods: {
+getUploadList(e) {
+const files = e.target.files;
+console.log(files);
+this.uploadList = [...files].map((e) => e.name);
+},
+},
+});
+app.mount("#app");
+</script>
+</body>
 </html>
