@@ -19,6 +19,7 @@
     <script>
       
       const vm=Vue.createApp({
+        props:["fileValue"]
       data(){
       return{
       upload:"nothings"
@@ -28,7 +29,7 @@
       },
         methods:{
         getFiles(e){
-          console.log(this.fileValue)
+          console.log(e.target.files)
            return this.upload=this.fileValue
           
         }
