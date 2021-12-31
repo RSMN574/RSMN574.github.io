@@ -456,56 +456,32 @@ border-radius:2px;
 			</div>
 				</div>
 	<br><br>
-	<div class="container" >
+		<template v-for="i in article">
+	    
+	    
+	    	<div class="container" >
 		
 	<div class="media" id="media1">
-		 <a href="https://rsmn574.github.io/Android-UI%E5%A4%A7%E6%AF%94%E8%BC%83.html" class="ahover">
-  <img  src="https://github.com/RSMN574/RSMN574.github.io/blob/main/coloros.png?raw=true" class="mr-3">
+		 <a :href="i.ahref" class="ahover">
+  <img  :src="i.img" class="mr-3">
   <div class="media-body">
-	    <h5 class="mt-0"  ><b >Android UI大比較</b></h5>
-	  <p>OPPO設計的系統UI，系統優化層面是Android數一數二的，即使是中低端手機，使用起來依舊流暢...</p><br>   
+	    <h5 class="mt-0"  ><b >{{i.title}}</b></h5>
+<p> {{i.introduction}}</p><br>   
 	  </a>
-			  <span class="date">2021年7月26日</span>
-  </div>
-		
-</div>
-		</div>
-	<br>
-	<br>
-	<div class="container" >
-		
-	<div class="media" id="media1">
-		 <a href="http://rsmn574.github.io/%E4%B8%89%E6%98%9FGalaxy%20F42%205G%E8%B7%91%E5%88%86%E6%9B%9D%E5%85%89%EF%BC%9A%E6%90%AD%E8%BC%89%E8%81%AF%E7%99%BC%E7%A7%91%E5%A4%A9%E7%92%A3700.html" class="ahover">
-  <img  src="https://github.com/RSMN574/RSMN574.github.io/blob/main/S64575b28-c25f-4a21-b658-34e09de336a9.jpg?raw=true" class="mr-3">
-  <div class="media-body">
-	    <h5 class="mt-0"  ><b >三星Galaxy F42 5G跑分曝光：搭載聯發科天璣700</b></h5>
-<p>三星還未發布的Galaxy F42 5G，跑分信息已經出現GeekBench 5網站上，檢測信息顯示，這款手機代號為“SM-E426B”，確認採用的是7nm工藝製造的聯發科天璣700芯片...</p><br>   
-	  </a>
-			  <span class="date">2021年7月25日</span>
+			  <span class="date">{{i.date}}</span>
   </div>
 		
 </div>
 		</div>
 	<br><br>
-	<div class="container" >
-		
-	<div class="media" id="media1">
-		 <a href="https://rsmn574.github.io/%E4%B8%8B%E4%B8%80%E5%A0%B4Samsung-Galaxy%20Unpacked-%E5%B0%87%E5%9C%A8-8-%E6%9C%88-11-%E6%97%A5%E8%88%89%E8%A1%8C.html" class="ahover">
-  <img  src="https://images.samsung.com/is/image/samsung/assets/tw/unpacked/unpacked_pre-registration_KV_1440.jpg?$ORIGIN_JPG$" class="mr-3">
-  <div class="media-body">
-	    <h5 class="mt-0"  ><b >下一場Samsung-Galaxy Unpacked 將在 8 月 11 日舉行</b></h5>
-	  <p>三星將在台灣時間 8 月 11 日晚上 10 點舉辦 Galaxy Unpacked 活動...</p><br>   
-	  </a>
-			  <span class="date">2021年7月22日</span>
-  </div>
-		
-</div>
-		</div>
-	<br>
+	</template>
+	
+	
+	
 	 <div class="container" >
 		
 	<div class="media" id="media1">
-		 <a href="https://rsmn574.github.io/Android-12-Beta-3.html" class="ahover">
+		 <a href="" class="ahover">
   <img  src="https://raw.githubusercontent.com/RSMN574/RSMN574.github.io/main/android%2012%20beta%203.jpg" class="mr-3">
   <div class="media-body">
 	    <h5 class="mt-0" id="mt-01"  ><b >Android 12 Beta 3</b></h5>
@@ -624,7 +600,62 @@ blurryContentViewport.scrollTop(window.pageYOffset);
 		
 const nav = Vue.createApp({
   
-    
+    data(){
+	    return{
+		 article:[
+            
+            {
+            ahref:"https://rsmn574.github.io/Android-UI%E5%A4%A7%E6%AF%94%E8%BC%83.html",
+            img:"https://github.com/RSMN574/RSMN574.github.io/blob/main/coloros.png?raw=true",
+           title:"Android UI大比較",
+           introduction:"OPPO設計的系統UI，系統優化層面是Android數一數二的，即使是中低端手機，使用起來依舊流暢...",
+           date:"2021年7月26日"
+            
+        } ,
+         {
+            ahref:"http://rsmn574.github.io/%E4%B8%89%E6%98%9FGalaxy%20F42%205G%E8%B7%91%E5%88%86%E6%9B%9D%E5%85%89%EF%BC%9A%E6%90%AD%E8%BC%89%E8%81%AF%E7%99%BC%E7%A7%91%E5%A4%A9%E7%92%A3700.html",
+            img:"https://github.com/RSMN574/RSMN574.github.io/blob/main/S64575b28-c25f-4a21-b658-34e09de336a9.jpg?raw=true",
+           title:"三星Galaxy F42 5G跑分曝光：搭載聯發科天璣700",
+           introduction:"三星還未發布的Galaxy F42 5G，跑分信息已經出現GeekBench 5網站上，檢測信息顯示，這款手機代號為“SM-E426B”，確認採用的是7nm工藝製造的聯發科天璣700芯片...",
+           date:"2021年7月25日"
+            
+        } ,  
+			 {
+            ahref:"https://rsmn574.github.io/%E4%B8%8B%E4%B8%80%E5%A0%B4Samsung-Galaxy%20Unpacked-%E5%B0%87%E5%9C%A8-8-%E6%9C%88-11-%E6%97%A5%E8%88%89%E8%A1%8C.html",
+            img:"https://images.samsung.com/is/image/samsung/assets/tw/unpacked/unpacked_pre-registration_KV_1440.jpg?$ORIGIN_JPG$",
+           title:"下一場Samsung-Galaxy Unpacked 將在 8 月 11 日舉行",
+           introduction:"三星將在台灣時間 8 月 11 日晚上 10 點舉辦 Galaxy Unpacked 活動...",
+           date:"2021年7月22日"
+            
+        } ,
+			 		 {
+            ahref:"https://rsmn574.github.io/Android-12-Beta-3.html",
+            img:"",
+           title:"",
+           introduction:"",
+           date:""
+            
+        } ,		 		 {
+            ahref:"",
+            img:"",
+           title:"",
+           introduction:"",
+           date:""
+            
+        } ,
+			 		 		 {
+            ahref:"",
+            img:"",
+           title:"",
+           introduction:"",
+           date:""
+            
+        } ,
+		    
+		    
+	    }
+	    
+    }
   
 });
 
