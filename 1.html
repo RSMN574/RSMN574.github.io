@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="a-k-o-f.svg">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7053043897766687"
+     crossorigin="anonymous"></script>
+     <meta name="google-site-verification" content="PAsOohFujr6zTrD_Mb5Lf4CpCLAdeKZsoLcbkOcRZXw" />
+    <title>Android-Tips</title>
+    <meta property="og:site_name" content="AndroidTips" />
+<meta property="fb:app_id" content="AndroidTips" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Android-Tips" />
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/rippleui@1.9.0/dist/css/styles.css"
+/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app">
+       
+       <navbar></navbar>
+       <div class="container mx-auto"><div class="breadcrumbs text-sm mb-4">
+        <ul>
+          <li>
+            <a href="index.html">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="mr-2 h-4 w-4 stroke-current">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>
+              </svg>
+              <p>首頁</p>
+            </a>
+          </li>
+          <li>
+           
+              
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>
+              </svg>
+              <a href="flash.html"><p>刷機專區</p></a>
+            
+          </li><li>
+           
+              
+			
+		<p>刷機教學-起始準備篇</p>
+	
+	  </li>
+          
+        </ul>
+      </div></div>
+      <div class="w-full my-12 text-center lg:w-4/6 mt-20 bg-[#f5f8fc] self-center mx-auto shadow-lg border border-slate-300 rounded-xl  dark:border-slate-700 dark:bg-[#1c1f26] dark:text-white">
+		<div class="mx-auto">
+			<h1 class="mx-auto text-2xl">刷機教學-起始準備篇</h1>
+		</div><br>
+		<div class="overflow-x-clip text-left p-8" id="block">
+			<p>作者: samson1357924<br>
+			本篇以小米手機刷機為主<br>
+			刷機警語<br>
+			刷機本來就有風險，可能帶來手機不穩定或甚至死機(變磚)，本人謹提供個人刷機經驗分享，不保證成功也不會對你的手機負責，請認清風險!!!<br>
+			刷機前準備<br>
+			<br></p>
+			<ol>
+				<li>解鎖BL(以下簡寫為解鎖)前置作業<br></li>
+				<li>準備各式工具、檔案、驅動程式</li>
+				<li>備份好資料(檔案為主，程式資料可以透過adb backup、miui內建工具或是其他工具備份)</li>
+				<li>了解各種模式(fastboot、recovery)的進入手勢</li>
+				<li>了解自己手機的類型，是否支援無縫升級(seamless upgrades)</li>
+				<li>驅動程式安裝</li>
+				<li>解鎖Bootloader(以下簡稱BL)</li>
+			</ol>
+			<p><br></p>
+			<p></p>
+			<p><strong>解鎖申請:</strong><br></p>
+			<ol>
+				<li>打開開發人員(者)選項(設定&gt;我的裝置&gt;全部規格&gt;MIUI版本點7下(有些手機是版本號碼)</li>
+				<li>進入開發人員選項(設定&gt;更多設定&gt;開發者選項)</li>
+				<li>點入裝置解鎖狀態，點選最下面綁定帳號和裝置</li>
+				<li>從申請到實際解鎖BL幾乎都要等168小時(一周)，在這之間，小米帳號綁定手機後，就可以慢慢地準備各項工具跟檔案(這裡以小米為例，不同廠牌會有不同的方式)</li>
+			</ol>
+			<p></p>
+			<p><strong>準備各式工具、檔案、驅動:</strong><br>
+			<br></p>
+			<ol>
+				<li>下載解鎖工具-mi unlock(內含小米手機驅動)，並解壓縮</li>
+			</ol>
+			<p><br>
+			<a href="https://www.miui.com/unlock/download.html">https://www.miui.com/unlock/download.html</a><br></p>
+			<ol>
+				<li>下載miflash或是小米助手<br>
+				<span>miflash</span><br>
+				<br>
+				小米助手<br>
+				<span>http://zhushou.xiaomi.com/</span></li>
+			</ol>
+			<p><br></p>
+			<ol>
+				<li>額外下載驅動(可不做，因為mi unlock已經內含小米驅動)<br>
+				Google的驅動<br>
+				<span>https://developer.android.com/studio/run/win-usb</span><br>
+				小米的驅動<br>
+				<span>https://www.xiaomi.cn/post/18464849</span><br>
+				其他各家廠商驅動<br>
+				三星:<span>http://www.samsung.com/tw/support/</span><br>
+				華為: <span>http://consumer.huawei.com/minisite/HiSuite_cn/</span><br>
+				小米: <span>http://bigota.d.miui.com/tools/xiaomi_usb_driver.rar</span><br>
+				Vivo: <span>http://zs.vivo.com.cn/download.php</span><br>
+				一加：<span>http://service.oneplus.cn/</span><br>
+				ASUS: <span>https://www.asus.com/tw/support/</span><br>
+				LG: <span>http://www.lg.com/us/support/software-firmware-drivers</span><br>
+				sony: <span>https://developer.sony.com/develop/drivers/</span><br>
+				HTC: <span>http://www.htc.com/tw/software/htc-sync-manager/</span><br>
+				Google: <span>https://developer.android.com/studio/run/win-usb.html</span><br>
+				BlackBerry: <span>https://swdownloads.blackberry.com/Downloads/entry.do?code=4EE093 2F46276313B51570F46266A608</span><br></li>
+				<li>下載刷機工具，並解壓縮(重要)<br>
+				<span>https://developer.android.com/studio/releases/platform-tools</span></li>
+				<li>下載自己手機的TWRP(小米的都是.img檔，如果發現是.zip請解壓縮)，並請丟到第4點解壓縮後的資料夾中 範例:<br>
+				註:檔案請自己Google"機型+TWRP"(注意機型，有些陸版的型號跟國際版名稱一樣，但處理器不同，應該要區分清楚)<br>
+				註:可以到TWRP官網先找找看(提供的型號有限) 網址: <span>https://twrp.me/Devices/</span> 另外也可以去國外的XDA論壇找(搜尋"手機型號+XDA"即可找到論壇)</li>
+				<li>下載你的目標刷機包(例如:EU版MIUI、其他版本的MIUI、其他第三方ROM) <span>https://xiaomi.eu/community/forums/miui-rom-releases.103/ ?fbclid=IwAR1ZMadPoHRqI3AySORgXS0J7T0JO9gk3RswPr9NQguS7RegAjkJaM3WSS4</span></li>
+			</ol>
+			<p>其他第三方系統(自己選，也可以去XDA找找看) (建議非必要)下載你當前版本的"線刷包"，刷機經常有意外，建議準備著，不管是發生意外或是想刷回去原廠系統，只要 能進fastboot，多半都可以刷回去，非常方便 <a href="https://xiaomirom.com/series/?fbclid=IwAR3v2mxBKYOBsKZPJ_tM4hFvNVgg3TTbH6P7yEwn5ifPVzJiLljlq6EJ3WI">https://xiaomirom.c om/series/?fbclid=IwAR3v2mxBKYOBsKZPJ_tM4hFvNVgg3TTbH6P7yEwn5ifPVzJiLljlq6EJ3WI</a></p>
+			<p><strong>備份資料</strong><br>
+			自己挑重要資料備份<br>
+			<strong>了解各種模式(fastboot、recovery)的進入手勢</strong>(注意不同廠牌的手勢會有補同)<br>
+			<strong>fastboot:</strong><br>
+			<strong>進入方式</strong><br>
+			關機之後，同時按住電源鍵+音量小<br>
+			或是<br>
+			重開機螢幕暗的時候，長按音量小<br>
+			<strong>退出方式</strong><br>
+			長按電源鍵+音量小，螢幕變暗時放開按鍵<br>
+			<strong>Recovery:</strong><br>
+			關機之後，同時按下電源鍵+音量大<br>
+			或是<br>
+			重開機螢幕暗的時候，長按音量大<br>
+			<strong>退出方式</strong><br>
+			選擇reboot或是Shotdown<br>
+			<strong>了解自己手機的類型，是否支援無縫升級(seamless upgrades)</strong><br>
+			下載APP-Treble Info<br>
+			play store<br>
+			<a href="https://play.google.com/store/apps/details?id=tk.hack5.treblecheck&amp;fbclid=IwAR2IshEGZlIF4TxvngFiZtpOjyGVVeoi88yHnGOyHjG%206S2VxTgdT5IxlbCo">https://play.google.com/store/apps/details?id=tk.hack5.treblecheck&amp;fbclid=IwAR2IshEGZlIF4Txv</a><br>
+			<a href="https://play.google.com/store/apps/details?id=tk.hack5.treblecheck&amp;fbclid=IwAR2IshEGZlIF4TxvngFiZtpOjyGVVeoi88yHnGOyHjG%206S2VxTgdT5IxlbCo">ngFiZtpOjyGVVeoi88yHn GOyHjG6S2VxTgdT5IxlbCo</a><br>
+			APK<br>
+			<a href="https://www.apkmirror.com/apk/hackintosh-five/treble-info/">https://www.apkmirror.com/apk/hackintosh-five/treble-info/</a><br>
+			<a href="https://apkpure.com/tw/treble-info/tk.hack5.treblecheck">https://apkpure.com/tw/treble-info/tk.hack5.treblecheck</a><br>
+			辨認手機類型<br>
+			不支援無縫升級(seamless upgrades)-解鎖後請接續閱讀有recovery分區篇<br>
+			<a href="https://rsmn574.github.io/%E5%88%B7%E6%A9%9F%E6%95%99%E5%AD%B8-%E5%88%B7%E6%A9%9F%E7%AF%87(%E6%9C%89recovery%E5%88%86%E5%8D%80%E7%AF%87).html">有recovery分區篇</a><br>
+			例圖<br>
+			<br>
+			<br>
+			支援無縫升級(seamless upgrades)-解鎖後請接續閱讀無recovery分區篇(更新中)<br>
+			例圖<br>
+			<br>
+			<br>
+			<strong>驅動程式安裝</strong><br></p>
+			<ol>
+				<li>將手機開至fastboot模式並透過"傳輸線"(部分充電線不具備傳輸檔案功能)連接至電腦</li>
+			</ol>
+			<p><br></p>
+			<ol>
+				<li>打開裝置管理員(可以用windows 10搜尋欄搜尋或是控制台&gt;硬體和音效&gt;裝置管理員)<br></li>
+			</ol>
+			<p><br></p>
+			<ol>
+				<li>查看是否有位安裝驅動程式的裝置<br>
+				正常情況:(原則上無須動作)<br>
+				<br>
+				出現驚嘆號:請接續下步驟</li>
+			</ol>
+			<p><br></p>
+			<ol>
+				<li>按右鍵點擊該裝置&gt;更新驅動程式<br></li>
+			</ol>
+			<p><br></p>
+			<ol>
+				<li>瀏覽電腦上的驅動程式&gt;瀏覽&gt;選擇到miflash-unlock下的driver&gt;win10(或xp-win7-win8)或者自行下載手機的驅動，後點擊 確定，在點擊確定即可。<br>
+				<br>
+				<br>
+				<br></li>
+			</ol>
+			<p></p>
+			<p><strong>解鎖Bootloader(以下簡稱BL)</strong><br></p>
+			<ol>
+				<li>將手機開入fastboot模式後，連接電腦，並執行上面下載的mi unlock<br>
+				<br>
+				其他手機解鎖工具: <span>https://www.addus.info/bootloader.htm</span><br></li>
+				<li>按照步驟登入帳號後一直按確定<br>
+				<br></li>
+				<li>成功解鎖後會呈現下面這個畫面，不成功會告訴你原因或是剩餘時間<br>
+				<br></li>
+				<li>重開機後會遇到雙清保護(factory reset protect，以下簡稱frp)，有可能是小米frp或是Google frp，視機型而定<br>
+				小米frp<br>
+				<br>
+				Google frp<br>
+				<br>
+				<br></li>
+			</ol>
+			<p><br></p>
+		</div>
+	</div>
+   
+       
+       <script src="main.js" >
+       
+       </script>
+      </div>
+      
+   
+  <style>
+     
+  </style>
+</html>
