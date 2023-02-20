@@ -21,7 +21,6 @@
 />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
-  </head>
   <body>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
@@ -29,8 +28,12 @@
     <div id="app">
        
        <navbar></navbar>
-      
-       
+       <div class="container mx-auto pt-24">
+        <h1 class="text-3xl  font-extrabold text-center pb-2">熱門影片</h1>
+        <div class="lg:w-8/12  mx-auto"><div class="videobox relative w-full h-0"> <iframe class=" absolute top-0 left-0 w-full h-full " width="560" height="315" src="https://www.youtube.com/embed/vNSWJZqBJIo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+       </div>
+      </div>
        <script src="main.js" >
        
        </script>
@@ -38,6 +41,9 @@
       
    
   <style>
-     
+  .videobox {
+   
+    padding-bottom: 56.25%;
+}
   </style>
 </html>
