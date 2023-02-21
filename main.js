@@ -26,6 +26,7 @@ const app = Vue.createApp({
    </template>`,
    data(){
     return{
+     
       category:location.pathname,
       article:[{
 title:'刷機教學-起始準備篇',
@@ -37,7 +38,17 @@ IMG:"a140678fb389d4b090858f09eeca426657aa2cde.jpg",
 href:"1.html",
 category:"flash"
 
-      },]
+      },{
+        title:'完全免費跨平台傳輸檔案APP',
+        introduction:'目前市面上的跨平台傳輸檔案APP，很多都是付費或有廣告等，今天要介紹完全免費的跨平台傳輸檔案APP',
+        author:'RSMN574',
+        date:'2022-02-22',
+        authorIMG:"account.svg",
+        IMG:"edt2023-02-22 002739.jpg",
+        href:"2.html",
+        category:"internet"
+        
+              },]
     }
   },mounted() {
    if(location.pathname.match("flash")!=null){
@@ -52,10 +63,10 @@ this.category="flash"
     this.category="other"
    }
     var a=new Array
-    for(i in this.article){
-      //console.log(this.article[i])
-      if(this.article[i].category== this.category){
-        a[a.length]=this.article[i]
+    for(i of this.article){
+      console.log(i)
+      if(i.category== this.category){
+        a[a.length]=i
         
       }
       this.article=a
@@ -79,7 +90,6 @@ this.category="flash"
        
         <li class="inline-block  "><a class="navbar-item" href="beautification.html">美化手機</a></li>
        
-        <li class="inline-block  "><a class="navbar-item" href="internet.html">網路軟體</a></li>
        
         <li class="inline-block  "><a class="navbar-item" href="media.html">影音娛樂</a></li>
        
@@ -100,7 +110,7 @@ this.category="flash"
 menu
 </span></label>
 <label class="overlay" for="drawer-left"></label>
-<div class="drawer">
+<div class="drawer fixed">
 	<div class="drawer-content pt-10 flex flex-col h-full">
 		<label for="drawer-left" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</label>
     <ul class="">
@@ -112,7 +122,7 @@ menu
      
       <li class="  my-4  align-top"><a class="navbar-item" href="beautification.html">美化手機</a></li>
      
-      <li class="  my-4  align-top"><a class="navbar-item" href="internet.html">網路軟體</a></li>
+      
      
       <li class=" my-4  align-top"><a class="navbar-item" href="media.html">影音娛樂</a></li>
      
