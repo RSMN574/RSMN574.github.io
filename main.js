@@ -48,7 +48,17 @@ category:"flash"
         href:"2.html",
         category:"internet"
         
-              },]
+              },{
+                title:'Android最強大的手柄映射程式',
+                introduction:' mantis gamepad pro這款強大的手柄映射app，支援高達十萬款遊戲，支援藍芽及USB連線',
+                author:'RSMN574',
+                date:'2022-02-24',
+                authorIMG:"account.svg",
+                IMG:"uyguuh2023-02-23 010710.jpg",
+                href:"3.html",
+                category:"other"
+                
+                      },]
     }
   },mounted() {
    if(location.pathname.match("flash")!=null){
