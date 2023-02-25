@@ -52,7 +52,21 @@
       </div></div>
        
 
+      <div class="button-container">
+  
+        <div class="glass-btn blue-btn">
+         <a href="https://www.facebook.com/rsmn574">
+          <img src="https://i.postimg.cc/DwbWDQTx/facebook.png" alt="facebook" style="width: 5.5em;"></a>
+        </div>
+      
+        <div class="glass-btn red-btn">
+         <a href="https://www.youtube.com/channel/UCCt7jI4kK7eQDlcsyBM_GXw">
+          <img src="https://i.postimg.cc/LstJ4Hhf/youtube.png" alt="youtube" style="width: 6em;"></a>
+        </div>
+        
        
+      
+      </div>
        <script src="main.js" >
        
        </script>
@@ -60,6 +74,89 @@
       
    
   <style>
-     
+     html, body {
+	
+	 transition: all 0.3s;
+	 height: 100%;
+}
+ .button-container {
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 height: 100%;
+}
+ .glass-btn {
+	 width: 100px;
+	 height: 100px;
+	 background-color: #fafafa;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 border-radius: 7px;
+	 margin-left: 1em;
+	 margin-right: 1em;
+	 cursor: pointer;
+	 transition: all 0.3s;
+}
+ .glass-btn.blue-btn {
+	 -webkit-box-shadow: 0px 20px 20px -17px rgba(0, 111, 255, 0.53);
+	 -moz-box-shadow: 0px 20px 20px -17px rgba(0, 111, 255, 0.53);
+	 box-shadow: 0px 20px 20px -17px rgba(0, 111, 255, 0.53);
+}
+ .glass-btn.blue-btn:hover {
+	 -webkit-box-shadow: 0px 20px 35px -16px rgba(0, 111, 255, 0.65);
+	 -moz-box-shadow: 0px 20px 35px -16px rgba(0, 111, 255, 0.65);
+	 box-shadow: 0px 20px 35px -16px rgba(0, 111, 255, 0.65);
+}
+ .glass-btn.blue-btn .content {
+	 font-size: 4em;
+	 font-family: "Roboto", sans-serif;
+	 background: linear-gradient(to right, #006fff, #00acff 70%);
+	 -webkit-background-clip: text;
+	 -webkit-text-fill-color: transparent;
+	 text-shadow: 0px 10px 37px rgba(0, 111, 255, 0.8);
+}
+ .glass-btn.red-btn {
+	 -webkit-box-shadow: 0px 20px 20px -17px rgba(255, 16, 39, 0.5);
+	 -moz-box-shadow: 0px 20px 20px -17px rgba(255, 16, 39, 0.5);
+	 box-shadow: 0px 20px 20px -17px rgba(255, 16, 39, 0.5);
+}
+ .glass-btn.red-btn:hover {
+	 -webkit-box-shadow: 0px 20px 35px -16px rgba(255, 16, 39, 0.57);
+	 -moz-box-shadow: 0px 20px 35px -16px rgba(255, 16, 39, 0.57);
+	 box-shadow: 0px 20px 35px -16px rgba(255, 16, 39, 0.57);
+}
+ .glass-btn.red-btn .content {
+	 font-size: 4em;
+	 font-family: "Roboto", sans-serif;
+	 background: linear-gradient(to right, #ff1027, #ff4f06 70%);
+	 -webkit-background-clip: text;
+	 -webkit-text-fill-color: transparent;
+	 text-shadow: 0px 10px 37px rgba(255, 16, 39, 0.6);
+}
+ .glass-btn.amber-btn {
+	 -webkit-box-shadow: 0px 20px 20px -17px rgba(255, 159, 16, 0.53);
+	 -moz-box-shadow: 0px 20px 20px -17px rgba(255, 159, 16, 0.53);
+	 box-shadow: 0px 20px 20px -17px rgba(255, 159, 16, 0.53);
+}
+ .glass-btn.amber-btn:hover {
+	 -webkit-box-shadow: 0px 20px 35px -16px rgba(255, 159, 16, 0.6);
+	 -moz-box-shadow: 0px 20px 35px -16px rgba(255, 159, 16, 0.6);
+	 box-shadow: 0px 20px 35px -16px rgba(255, 159, 16, 0.6);
+}
+ .glass-btn.amber-btn .content {
+	 font-size: 4em;
+	 font-family: "Roboto", sans-serif;
+	 background: linear-gradient(to right, #ff8d00, #f7ad07 70%);
+	 -webkit-background-clip: text;
+	 -webkit-text-fill-color: transparent;
+	 text-shadow: 0px 10px 37px rgba(255, 94, 16, 0.7);
+}
+ .glass-btn:hover {
+	 background-color: #f5f5f5;
+	 transform: translateY(-5px);
+	 transition: all 0.3s;
+}
+ 
   </style>
 </html>

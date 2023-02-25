@@ -8,16 +8,16 @@ const app = Vue.createApp({
   app.component('postcard', {
     template:` <template v-for="i in article">
     <a class="mt-8 max-h-48 w-6/12 sm:h-max sm:w-9/12 h-full justify-self-center md:w-9/12 justify-self-center" :href="(i.href)">
-	<div class="max-w-md h-full sm:h-max mx-auto shadow-md overflow-hidden border border-slate-300 bg-[#f5f8fc]  rounded-xl md:max-w-2xl hover:scale-105 transition ease-in-out">
+	<div class="max-w-md h-full sm:h-max mx-auto shadow-md overflow-hidden border border-slate-300 bg-[#f5f8fc] dark:bg-[#242527] rounded-xl md:max-w-2xl hover:scale-105 transition ease-in-out">
 		<div class="md:flex">
 			<div class="md:shrink-0"><img alt="" class="h-full w-full object-cover md:h-full md:w-48 sm:h-1/4 aspect-video" :src="(i.IMG)"></div>
 			<div class="p-4">
-				<h1 class="block mt-1 text-lg leading-tight font-medium text-black ">{{i.title}}</h1>
-				<p class="mt-2 text-slate-500">{{i.introduction}}</p>
+				<h1 class="block mt-1 text-lg leading-tight font-medium text-black dark:text-white ">{{i.title}}</h1>
+				<p class="mt-2 text-slate-500 dark:text-[#b2b3b5]">{{i.introduction}}</p>
 				<div class="flex items-center gap-2 p-4">
 					<img class="rounded-full w-10 h-10" :src="(i.authorIMG)">
 					<div class="flex flex-col">
-						<strong class="text-center text-slate-900 text-base font-medium  sm:text-sm">{{i.author}}</strong><span class="text-end text-slate-500 text-sm font-medium dark:text-slate-400">{{i.date}}</span>
+						<strong class="text-center text-slate-900 text-base font-medium  dark:text-[#b2b3b5] sm:text-sm">{{i.author}}</strong><span class="text-end text-slate-500 text-sm font-medium dark:text-slate-400">{{i.date}}</span>
 					</div>
 				</div>
 			</div>
@@ -85,7 +85,7 @@ this.category="flash"
    },
   })
   app.component('navbar', {
-  template:` <div class=" hidden md:inline h-16  fixed w-screen border-b border-slate-900/10 backdrop-blur-lg bg-white/30 h-12 rounded-sm ">
+  template:` <div class=" hidden md:inline h-16  fixed w-screen border-b border-slate-900/10 backdrop-blur-lg bg-white/30 h-12 rounded-sm dark:bg-[#35363a]/50">
   
   
 
@@ -109,12 +109,13 @@ this.category="flash"
     </div>
  
 </div>
-<div class="fixed md:hidden w-screen border-b border-slate-900/10 backdrop-blur-lg bg-white/30 h-14 rounded-sm ">
-<div class="mt-2 left-4 absolute"><a class="router-link-active router-link-exact-active" href="index.html">
+<div class="fixed md:hidden w-screen border-b border-slate-900/10 backdrop-blur-lg bg-white/30 h-14 rounded-sm dark:bg-[#35363a]/50">
+<div class="relative flex items-center h-full ">
+<div class=" left-4 absolute"><a class="router-link-active router-link-exact-active" href="index.html">
 <img class="w-8" src="a-k-o-f.svg">
 </a></div>
 
-<div class="absolute right-4 mt-1"><input type="checkbox" id="drawer-left" class="drawer-toggle" />
+<div class="absolute right-4 "><input type="checkbox" id="drawer-left" class="drawer-toggle" />
 
 <label for="drawer-left" class="btn bg-gradient-to-r from-[#fa709a] to-[#fee140]"><span class="stroke-blue-500 material-symbols-outlined">
 menu
@@ -140,6 +141,7 @@ menu
       <li class="  my-4  align-top"><a class="navbar-item" href="aboutus.html">關於我們</a></li>
     </ul>
 	</div>
+</div>
 </div>
 </div>
 </div>
