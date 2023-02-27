@@ -8,7 +8,7 @@ const app = Vue.createApp({
   app.component('postcard', {
     template:` <template v-for="i in article">
     <a class="mt-8 max-h-48 w-6/12 sm:h-max sm:w-9/12 h-full justify-self-center md:w-9/12 justify-self-center" :href="(i.href)">
-	<div class="max-w-md h-full sm:h-max mx-auto shadow-md overflow-hidden border border-slate-300 bg-[#f5f8fc] dark:bg-[#242527] rounded-xl md:max-w-2xl hover:scale-105 transition ease-in-out">
+	<div class="max-w-md h-full sm:h-max mx-auto shadow-md overflow-hidden border border-slate-300 bg-[#f5f8fc] dark:bg-[#242527] dark:border-none rounded-xl md:max-w-2xl hover:scale-105 transition ease-in-out">
 		<div class="md:flex">
 			<div class="md:shrink-0"><img alt="" class="h-full w-full object-cover md:h-full md:w-48 sm:h-1/4 aspect-video" :src="(i.IMG)"></div>
 			<div class="p-4">
@@ -23,12 +23,23 @@ const app = Vue.createApp({
 			</div>
 		</div>
 	</div></a>
+  <br><br>
    </template>`,
    data(){
     return{
      
       category:location.pathname,
       article:[{
+        title:'讓陸版MIUI也收的到LINE通知',
+        introduction:' 陸版MIUI的電量和性能省電策略過於激進，導致LINE、messenger等無法收到通知。',
+        author:'RSMN574',
+        date:'2022-02-28',
+        authorIMG:"account.svg",
+        IMG:"reyyrtuyhty2023-02-28 003805.jpg",
+        href:"4.html",
+        category:"flash"
+        
+              },{
 title:'刷機教學-起始準備篇',
 introduction:'刷機警語刷機本來就有風險，可能帶來手機不穩定或甚至死機(變磚)，本人謹提供個人刷機經驗分享，不保證成功也不會對你的手機負責，請認清風險!!!',
 author:'samson1357924',
@@ -85,7 +96,7 @@ this.category="flash"
    },
   })
   app.component('navbar', {
-  template:` <div class=" hidden md:inline h-16  fixed w-screen border-b border-slate-900/10 backdrop-blur-lg bg-white/30 h-12 rounded-sm dark:bg-[#35363a]/50">
+  template:` <div class=" z-50 hidden md:inline h-16  fixed w-screen border-b border-slate-900/10 backdrop-blur-lg bg-white/30 h-12 rounded-sm dark:bg-[#35363a]/50">
   
   
 
@@ -109,7 +120,7 @@ this.category="flash"
     </div>
  
 </div>
-<div class="fixed md:hidden w-screen border-b border-slate-900/10 backdrop-blur-lg bg-white/30 h-14 rounded-sm dark:bg-[#35363a]/50">
+<div class="fixed md:hidden w-screen border-b border-slate-900/10 backdrop-blur-lg bg-white/30 h-14 rounded-sm dark:bg-[#35363a]/50 z-50">
 <div class="relative flex items-center h-full ">
 <div class=" left-4 absolute"><a class="router-link-active router-link-exact-active" href="index.html">
 <img class="w-8" src="a-k-o-f.svg">
