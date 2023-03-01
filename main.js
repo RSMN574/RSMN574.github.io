@@ -7,7 +7,7 @@ const app = Vue.createApp({
   })
   app.component('postcard', {
     template:` <template v-for="i in article">
-    <a class="mt-8 max-h-48 w-6/12 sm:h-max sm:w-9/12 h-full justify-self-center md:w-9/12 justify-self-center" :href="(i.href)">
+    <a data-aos="fade-up" class="mt-8 max-h-48 w-6/12 sm:h-max sm:w-9/12 h-full justify-self-center md:w-9/12 justify-self-center" :href="(i.href)">
 	<div class="max-w-md h-full sm:h-max mx-auto shadow-md overflow-hidden border border-slate-300 bg-[#f5f8fc] dark:bg-[#242527] dark:border-none rounded-xl md:max-w-2xl hover:scale-105 transition ease-in-out">
 		<div class="md:flex">
 			<div class="md:shrink-0"><img alt="" class="h-full w-full object-cover md:h-full md:w-48 sm:h-1/4 aspect-video" :src="(i.IMG)"></div>
@@ -65,7 +65,7 @@ category:"flash"
                 author:'RSMN574',
                 date:'2022-02-24',
                 authorIMG:"account.svg",
-                IMG:"uyguuh2023-02-23 010710.jpg",
+                IMG:"ygyuh.jpg",
                 href:"3.html",
                 category:"other"
                 
