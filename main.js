@@ -135,21 +135,33 @@ menu
 <div class="drawer fixed">
 	<div class="drawer-content pt-10 flex flex-col h-full">
 		<label for="drawer-left" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</label>
-    <ul class="">
+    <ul class="pt-4 pl-4">
     
      
-      <li class=" my-4 align-top"><a class="navbar-item" href="flash.html">刷機專區</a></li>
+      <li class=" my-4 align-top"><a class="navbar-item" href="flash.html"><span class="material-symbols-outlined">
+      cable
+      </span><span class="align-top"> 刷機專區</span></a></li>
      
-      <li class=" my-4   align-top"><a class="navbar-item" href="internet.html">網路軟體</a></li>
+      <li class=" my-4   "><a class="navbar-item " href="internet.html"><span class="material-symbols-outlined">
+      language
+      </span><span class="align-top"> 網路軟體</span></a></li>
      
-      <li class="  my-4  align-top"><a class="navbar-item" href="beautification.html">美化手機</a></li>
+      <li class="  my-4  align-top"><a class="navbar-item" href="beautification.html"><span class="material-symbols-outlined">
+      pixel_3_3xl_3a
+      </span><span class="align-top"> 美化手機</span></a></li>
      
       
      
-      <li class=" my-4  align-top"><a class="navbar-item" href="media.html">影音娛樂</a></li>
+      <li class=" my-4  align-top"><a class="navbar-item" href="media.html"><span class="material-symbols-outlined">
+      subscriptions
+      </span><span class="align-top"> 影音娛樂</span></a></li>
      
-      <li class="  my-4  align-top"><a class="navbar-item" href="other.html">其他</a></li>
-      <li class="  my-4  align-top"><a class="navbar-item" href="aboutus.html">關於我們</a></li>
+      <li class="  my-4  align-top"><a class="navbar-item" href="other.html"><span class="material-symbols-outlined">
+      dynamic_feed
+      </span><span class="align-top"> 其他</span></a></li>
+      <li class="  my-4  align-top"><a class="navbar-item" href="aboutus.html"><span class="material-symbols-outlined">
+      groups
+      </span><span class="align-top"> 關於我們</span></</a></li>
     </ul>
 	</div>
 </div>
