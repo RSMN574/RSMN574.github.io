@@ -30,6 +30,16 @@ const app = Vue.createApp({
      
       category:location.pathname,
       article:[{
+        title:'Android最強大音樂播放器',
+        introduction:'Oto Music 是一款好用、簡約的音樂播放器。能使用Chromecast 和 Android Auto 串流，自訂等化器，分類標籤非常詳細。',
+        author:'RSMN574',
+        date:'2022-03-06',
+        authorIMG:"account.svg",
+        IMG:"652.jpg",
+        href:"5.html",
+        category:"media"
+        
+              },{
         title:'讓陸版MIUI也收的到LINE通知',
         introduction:' 陸版MIUI的電量和性能省電策略過於激進，導致LINE、messenger等無法收到通知。',
         author:'RSMN574',
