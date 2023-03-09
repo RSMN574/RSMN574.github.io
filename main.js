@@ -30,6 +30,16 @@ const app = Vue.createApp({
      
       category:location.pathname,
       article:[{
+        title:'Musify背景播放YT音樂',
+        introduction:'相信不少人都會在YT聽音樂，每次都會被廣告打擾或是想要有能背景播放音樂、下載。這次要推薦一個音樂APP「Musify」。',
+        author:'RSMN574',
+        date:'2022-03-10',
+        authorIMG:"account.svg",
+        IMG:"rfserty op5.jpg",
+        href:"6.html",
+        category:"media"
+        
+              },{
         title:'Android最強大音樂播放器',
         introduction:'Oto Music 是一款好用、簡約的音樂播放器。能使用Chromecast 和 Android Auto 串流，自訂等化器，分類標籤非常詳細。',
         author:'RSMN574',
