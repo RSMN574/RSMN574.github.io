@@ -167,7 +167,7 @@ menu
       </span><span class="align-top"> 網路軟體</span></a></li>
      
       <li class="  my-4  align-top"><a class="navbar-item" href="beautification.html"><span class="material-symbols-outlined">
-      pixel_3_3xl_3a
+      settings_cell
       </span><span class="align-top"> 美化手機</span></a></li>
      
       
