@@ -121,21 +121,21 @@ this.category="flash"
   
 
   <ul class="md:flex lg:flex text-center justify-center gap-x-2 mt-5 hidden">
-      <a class="router-link-active router-link-exact-active" href="index.html">
+      <a class="router-link-active router-link-exact-active" alt="AndroidTips" href="index.html" aria-label="首頁">
       <li class="inline-block "><img class="w-8" src="a-k-o-f.svg"></li>
       </a>
        
-        <li class="inline-block "><a class="navbar-item" href="flash.html">刷機專區</a></li>
+        <li class="inline-block "><a class="navbar-item" aria-label="刷機專區" href="flash.html">刷機專區</a></li>
        
-        <li class="inline-block  "><a class="navbar-item" href="internet.html">網路軟體</a></li>
+        <li class="inline-block  "><a class="navbar-item" aria-label="網路軟體" href="internet.html">網路軟體</a></li>
        
-        <li class="inline-block  "><a class="navbar-item" href="beautification.html">美化手機</a></li>
+        <li class="inline-block  "><a class="navbar-item" href="beautification.html" aria-label="美化手機">美化手機</a></li>
        
        
-        <li class="inline-block  "><a class="navbar-item" href="media.html">影音娛樂</a></li>
+        <li class="inline-block  "><a class="navbar-item" href="media.html"  aria-label="影音娛樂">影音娛樂</a></li>
        
-        <li class="inline-block  "><a class="navbar-item" href="other.html">其他</a></li>
-        <li class="inline-block  "><a class="navbar-item" href="aboutus.html">關於我們</a></li>
+        <li class="inline-block  "><a class="navbar-item" href="other.html"  aria-label="其他">其他</a></li>
+        <li class="inline-block  "><a class="navbar-item" href="aboutus.html"  aria-label="關於我們">關於我們</a></li>
       </ul>
     </div>
  
@@ -143,7 +143,7 @@ this.category="flash"
 <div class="fixed md:hidden w-screen border-b border-slate-900/10 backdrop-blur-lg bg-white/30 h-14 rounded-sm dark:bg-[#35363a]/50 z-50">
 <div class="relative flex items-center h-full ">
 <div class=" left-4 absolute"><a class="router-link-active router-link-exact-active" href="index.html">
-<img class="w-8" src="a-k-o-f.svg">
+<img class="w-8" src="a-k-o-f.svg" alt="AndroidTips">
 </a></div>
 
 <div class="absolute right-4 "><input type="checkbox" id="drawer-left" class="drawer-toggle" />
@@ -158,28 +158,28 @@ menu
     <ul class="pt-4 pl-4">
     
      
-      <li class=" my-4 align-top"><a class="navbar-item" href="flash.html"><span class="material-symbols-outlined">
+      <li class=" my-4 align-top"><a class="navbar-item" aria-label="刷機專區" href="flash.html"><span class="material-symbols-outlined">
       cable
       </span><span class="align-top"> 刷機專區</span></a></li>
      
-      <li class=" my-4   "><a class="navbar-item " href="internet.html"><span class="material-symbols-outlined">
+      <li class=" my-4   "><a class="navbar-item " aria-label="網路軟體" href="internet.html"><span class="material-symbols-outlined">
       language
       </span><span class="align-top"> 網路軟體</span></a></li>
      
-      <li class="  my-4  align-top"><a class="navbar-item" href="beautification.html"><span class="material-symbols-outlined">
+      <li class="  my-4  align-top"><a aria-label="美化手機" class="navbar-item" href="beautification.html"><span class="material-symbols-outlined">
       settings_cell
       </span><span class="align-top"> 美化手機</span></a></li>
      
       
      
-      <li class=" my-4  align-top"><a class="navbar-item" href="media.html"><span class="material-symbols-outlined">
+      <li class=" my-4  align-top"><a aria-label="影音娛樂" class="navbar-item" href="media.html"><span class="material-symbols-outlined">
       subscriptions
       </span><span class="align-top"> 影音娛樂</span></a></li>
      
-      <li class="  my-4  align-top"><a class="navbar-item" href="other.html"><span class="material-symbols-outlined">
+      <li class="  my-4  align-top"><a aria-label="其他" class="navbar-item" href="other.html"><span class="material-symbols-outlined">
       dynamic_feed
       </span><span class="align-top"> 其他</span></a></li>
-      <li class="  my-4  align-top"><a class="navbar-item" href="aboutus.html"><span class="material-symbols-outlined">
+      <li class="  my-4  align-top"><a class="navbar-item" aria-label="關於我們"  href="aboutus.html"><span class="material-symbols-outlined">
       groups
       </span><span class="align-top"> 關於我們</span></</a></li>
     </ul>
