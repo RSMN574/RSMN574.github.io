@@ -30,6 +30,16 @@ const app = Vue.createApp({
      
       category:location.pathname,
       article:[{
+        title:'比較哪一個社交軟體傳圖片畫質最高',
+        introduction:'不管是LINE、Messenger、ig或者是微信等，都會把傳送的圖片經過壓縮以便傳輸。',
+        author:'RSMN574',
+        date:'2022-03-18',
+        authorIMG:"account.svg",
+        IMG:"line msg ig wechat.jpg",
+        href:"7.html",
+        category:"other"
+        
+              },{
         title:'Musify背景播放YT音樂',
         introduction:'相信不少人都會在YT聽音樂，每次都會被廣告打擾或是想要有能背景播放音樂、下載。這次要推薦一個音樂APP「Musify」。',
         author:'RSMN574',
