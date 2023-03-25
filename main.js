@@ -30,6 +30,16 @@ const app = Vue.createApp({
      
       category:location.pathname,
       article:[{
+        title:'使用「Mockview」 將螢幕截圖套上iPhone、iPad、Mac、Apple Watch 外框',
+        introduction:'手機或電腦的螢幕截圖，為了美觀或需要製作APP縮圖，可以再加上裝置的外框。',
+        author:'RSMN574',
+        date:'2022-03-26',
+        authorIMG:"account.svg",
+        IMG:"mockview.jpg",
+        href:"8.html",
+        category:"other"
+        
+              },{
         title:'比較哪一個社交軟體傳圖片畫質最高',
         introduction:'不管是LINE、Messenger、ig或者是微信等，都會把傳送的圖片經過壓縮以便傳輸。',
         author:'RSMN574',
@@ -126,7 +136,7 @@ this.category="flash"
    },
   })
   app.component('navbar', {
-  template:` <div class=" z-50 hidden md:inline h-16  fixed w-screen border-b border-slate-900/10 backdrop-blur-lg bg-white/30 h-12 rounded-sm dark:bg-[#35363a]/50">
+  template:` <div class=" z-50 hidden md:inline h-16  fixed w-full border-b border-slate-900/10 backdrop-blur-lg bg-white/30  rounded-sm dark:bg-[#35363a]/50">
   
   
 
@@ -212,4 +222,8 @@ menu
   
   
   })
+ 
+    
+    
+  
   app.mount('#app')

@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "TE-bold";
+    src: url("font/TaipeiSansTCBeta-Bold.ttf");
+  }
+  @font-face {
+    font-family: "TE-regular";
+    src: url("font/TaipeiSansTCBeta-Regular.ttf");
+  }
+  body {
+    font-family: "TE-regular", serif;
+  }
+
