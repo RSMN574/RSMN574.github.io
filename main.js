@@ -30,6 +30,16 @@ const app = Vue.createApp({
      
       category:location.pathname,
       article:[{
+        title:'Fing – Network Tools 網管人員必用神器',
+        introduction:'Fing可以查看同網段的設備與名稱都掃描，並且可以查看每一組的IP位置開啟了什麼port，還有網路安全掃描工具和Ping工具等。',
+        author:'RSMN574',
+        date:'2022-04-09',
+        authorIMG:"account.svg",
+        IMG:"fing/fing.webp",
+        href:"9.html",
+        category:"internet"
+        
+              },{
         title:'使用「Mockview」 將螢幕截圖套上iPhone、iPad、Mac、Apple Watch 外框',
         introduction:'手機或電腦的螢幕截圖，為了美觀或需要製作APP縮圖，可以再加上裝置的外框。',
         author:'RSMN574',
